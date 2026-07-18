@@ -1,0 +1,149 @@
+/* src/index.css */
+@import '@fontsource/fraunces/500.css';
+@import '@fontsource/fraunces/600.css';
+@import '@fontsource/fraunces/700.css';
+@import '@fontsource/fraunces/600-italic.css';
+@import '@fontsource/inter/400.css';
+@import '@fontsource/inter/500.css';
+@import '@fontsource/inter/600.css';
+@import '@fontsource/inter/700.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply font-sans text-timbercraft-dark antialiased;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-semibold;
+  }
+
+  :focus-visible {
+    @apply outline-none ring-2 ring-timbercraft-green ring-offset-2 ring-offset-white rounded-sm;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .section-padding {
+    @apply py-12 md:py-16 lg:py-20;
+  }
+  
+  .btn-primary {
+    @apply btn border-none bg-timbercraft-green text-white px-6 hover:bg-timbercraft-dark-green
+           shadow-md hover:shadow-lg transition-all duration-300;
+  }
+  
+  .btn-secondary {
+    @apply btn btn-ghost border-2 border-timbercraft-green text-timbercraft-green px-6 bg-transparent
+           hover:bg-timbercraft-green hover:border-timbercraft-green hover:text-white
+           transition-all duration-300;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2 text-timbercraft-green font-semibold uppercase tracking-[0.15em] text-xs md:text-sm mb-3;
+  }
+
+  .eyebrow::before {
+    content: '';
+    @apply w-6 h-[2px] bg-timbercraft-wood inline-block;
+  }
+  
+  .section-title {
+    @apply text-3xl md:text-4xl lg:text-5xl font-display font-semibold text-timbercraft-dark 
+           mb-4 text-center tracking-tight;
+  }
+  
+  .section-subtitle {
+    @apply text-base md:text-lg text-gray-600 text-center max-w-3xl mx-auto mb-12 leading-relaxed;
+  }
+  
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-1.5;
+  }
+}
+
+/* Custom animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Loading spinner */
+.spinner {
+  border: 4px solid rgba(45, 90, 39, 0.1);
+  border-radius: 50%;
+  border-top: 4px solid #2D5A27;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Slide up animation */
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-up {
+  animation: slideUp 0.6s ease-out;
+}
+
+/* Scroll bar styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2D5A27;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1E3D1A;
+}
