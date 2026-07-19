@@ -1,13 +1,24 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { Expand, RotateCcw } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { products } from '../data';
+import { usePageMetaLiteral } from '../hooks/usePageMeta';
 
 const ProductDetailPage = () => {
   const { id } = useParams();
+  const { t } = useTranslation();
   const product = products.find((p) => String(p.id) === id);
+
+  const title = product ? t(`products.items.${product.id}.title`) : '';
+  const description = product ? t(`products.items.${product.id}.description`) : '';
+  usePageMetaLiteral(
+    product ? `${title} | TimberCraft Rwanda` : 'TimberCraft Rwanda',
+    description
+  );
+
   const [activeImage, setActiveImage] = useState(product?.image);
   const [lightboxOpen, setLightboxOpen] = useState(false);
 
@@ -23,9 +34,11 @@ const ProductDetailPage = () => {
         <main className="section-padding">
           <div className="container-custom text-center">
             <div role="alert" className="alert alert-error max-w-md mx-auto mb-4">
-              <span>Product not found</span>
+              <span>{t('productDetail.notFound')}</span>
             </div>
-            <Link to="/products" className="btn-primary inline-flex gap-2"><RotateCcw size={16} /> Back to Products</Link>
+            <Link to="/products" className="btn-primary inline-flex gap-2">
+              <RotateCcw size={16} /> {t('productDetail.backToProducts')}
+            </Link>
           </div>
         </main>
         <Footer />
@@ -40,14 +53,14 @@ const ProductDetailPage = () => {
         <div className="container-custom">
           <div className="text-sm breadcrumbs mb-6 text-gray-500">
             <ul>
-              <li><Link to="/" className="hover:text-timbercraft-green">Home</Link></li>
-              <li><Link to="/products" className="hover:text-timbercraft-green">Products</Link></li>
-              <li className="text-timbercraft-dark font-medium">{product.title}</li>
+              <li><Link to="/" className="hover:text-timbercraft-green">{t('common.home')}</Link></li>
+              <li><Link to="/products" className="hover:text-timbercraft-green">{t('nav.products')}</Link></li>
+              <li className="text-timbercraft-dark font-medium">{title}</li>
             </ul>
           </div>
 
-          <h1 className="text-3xl md:text-4xl font-display font-semibold text-timbercraft-dark mb-2 tracking-tight">{product.title}</h1>
-          <p className="text-gray-600 mb-8 max-w-2xl">{product.description}</p>
+          <h1 className="text-3xl md:text-4xl font-display font-semibold text-timbercraft-dark mb-2 tracking-tight">{title}</h1>
+          <p className="text-gray-600 mb-8 max-w-2xl">{description}</p>
 
           <button
             onClick={() => setLightboxOpen(true)}
@@ -55,11 +68,11 @@ const ProductDetailPage = () => {
           >
             <img
               src={activeImage}
-              alt={product.title}
+              alt={title}
               className="w-full h-[420px] md:h-[520px] object-cover"
             />
             <span className="absolute bottom-4 right-4 bg-black/60 text-white text-xs px-3 py-2 rounded-full flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
-              <Expand size={14} /> View full size
+              <Expand size={14} /> {t('common.viewFullSize')}
             </span>
           </button>
 
@@ -71,14 +84,14 @@ const ProductDetailPage = () => {
                   onClick={() => setActiveImage(img)}
                   className={`rounded-lg overflow-hidden border-2 transition-all ${activeImage === img ? 'border-timbercraft-green' : 'border-transparent opacity-80 hover:opacity-100'}`}
                 >
-                  <img src={img} alt={`${product.title} ${idx + 1}`} className="w-full h-24 md:h-28 object-cover" />
+                  <img src={img} alt={`${title} ${idx + 1}`} className="w-full h-24 md:h-28 object-cover" />
                 </button>
               ))}
             </div>
           )}
 
           <div className="mt-12 text-center">
-            <Link to="/contact" className="btn-primary btn-lg inline-flex">Request a Quote →</Link>
+            <Link to="/contact" className="btn-primary btn-lg inline-flex">{t('common.requestQuote')} →</Link>
           </div>
         </div>
       </main>
@@ -87,7 +100,7 @@ const ProductDetailPage = () => {
       {lightboxOpen && (
         <div className="modal modal-open" onClick={() => setLightboxOpen(false)}>
           <div className="modal-box max-w-5xl p-2 bg-transparent shadow-none">
-            <img src={activeImage} alt={product.title} className="w-full h-auto rounded-lg" />
+            <img src={activeImage} alt={title} className="w-full h-auto rounded-lg" />
           </div>
           <div className="modal-backdrop bg-black/85"></div>
         </div>

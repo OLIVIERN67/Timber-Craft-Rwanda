@@ -7,8 +7,11 @@ import About from '../components/About';
 import Statistics from '../components/Statistics';
 import CTA from '../components/CTA';
 import Footer from '../components/Footer';
+import usePageMeta from '../hooks/usePageMeta';
 
 const Home = () => {
+  usePageMeta('meta.home.title', 'meta.home.description');
+
   return (
     <div className="min-h-screen">
       <Navbar />

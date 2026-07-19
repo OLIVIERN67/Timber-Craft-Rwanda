@@ -1,22 +1,24 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { MapPin, Phone, Mail } from 'lucide-react';
 import { contactInfo } from '../data';
 
 const Footer = () => {
+  const { t } = useTranslation();
   const currentYear = new Date().getFullYear();
 
   const footerLinks = {
     company: [
-      { to: '/about', label: 'About Us' },
-      { to: '/products', label: 'Products' },
-      { to: '/services', label: 'Services' },
-      { to: '/projects', label: 'Projects' },
+      { to: '/about', key: 'about' },
+      { to: '/products', key: 'products' },
+      { to: '/services', key: 'services' },
+      { to: '/projects', key: 'projects' },
     ],
     support: [
-      { to: '/sustainability', label: 'Sustainability' },
-      { to: '/contact', label: 'Contact Us' },
-      { to: '/faq', label: 'FAQ' },
+      { to: '/sustainability', key: 'sustainability' },
+      { to: '/contact', key: 'contact' },
+      { to: '/faq', key: 'faq' },
     ],
   };
 
@@ -34,7 +36,7 @@ const Footer = () => {
           </div>
         </div>
         <p className="text-sm text-gray-400 mb-4">
-          Premium wooden products, custom furniture, and sustainable timber solutions made in Rwanda.
+          {t('footer.tagline')}
         </p>
         <div className="flex gap-3">
           <a href="#" aria-label="Facebook" className="w-9 h-9 flex items-center justify-center rounded-full bg-white/5 text-gray-400 hover:bg-timbercraft-green hover:text-white transition-colors">
@@ -56,7 +58,7 @@ const Footer = () => {
       </div>
 
       <div>
-        <h4 className="footer-title text-white opacity-100 font-display">Company</h4>
+        <h4 className="footer-title text-white opacity-100 font-display">{t('footer.companyHeader')}</h4>
         <ul className="space-y-2">
           {footerLinks.company.map((link) => (
             <li key={link.to}>
@@ -64,7 +66,7 @@ const Footer = () => {
                 to={link.to}
                 className="text-gray-400 hover:text-timbercraft-light-green transition-colors text-sm"
               >
-                {link.label}
+                {t(`footer.links.${link.key}`)}
               </Link>
             </li>
           ))}
@@ -72,7 +74,7 @@ const Footer = () => {
       </div>
 
       <div>
-        <h4 className="footer-title text-white opacity-100 font-display">Support</h4>
+        <h4 className="footer-title text-white opacity-100 font-display">{t('footer.supportHeader')}</h4>
         <ul className="space-y-2">
           {footerLinks.support.map((link) => (
             <li key={link.to}>
@@ -80,7 +82,7 @@ const Footer = () => {
                 to={link.to}
                 className="text-gray-400 hover:text-timbercraft-light-green transition-colors text-sm"
               >
-                {link.label}
+                {t(`footer.links.${link.key}`)}
               </Link>
             </li>
           ))}
@@ -88,7 +90,7 @@ const Footer = () => {
       </div>
 
       <div>
-        <h4 className="footer-title text-white opacity-100 font-display">Contact Us</h4>
+        <h4 className="footer-title text-white opacity-100 font-display">{t('footer.contactHeader')}</h4>
         <ul className="space-y-3 text-sm">
           {contactInfo.address && (
             <li className="flex items-center gap-2">
@@ -114,8 +116,8 @@ const Footer = () => {
 
       <div className="border-t border-gray-700">
         <div className="container-custom py-6 text-center">
-          <p className="text-sm text-gray-400">&copy; {currentYear} TimberCraft Rwanda. All rights reserved.</p>
-          <p className="text-xs text-gray-500 mt-1 font-display italic">Crafting Quality. Building Legacy.</p>
+          <p className="text-sm text-gray-400">&copy; {currentYear} {t('footer.copyright')}</p>
+          <p className="text-xs text-gray-500 mt-1 font-display italic">{t('footer.footerTagline')}</p>
         </div>
       </div>
     </footer>

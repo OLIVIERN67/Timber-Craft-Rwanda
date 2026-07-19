@@ -1,7 +1,7 @@
+// Text content for this section lives in translation files
+// (public/locales/{lng}/translation.json under the "hero" key).
+// This file only holds non-text, language-independent data.
 const hero = {
-  title: "Crafting Quality. Building Legacy.",
-  subtitle:
-    "Premium wooden products, custom furniture, and sustainable timber solutions made in Rwanda.",
   backgroundImage: "/images/img69.jpeg",
 };
 

@@ -7,4 +7,3 @@ export { default as cta } from './cta';
 export { default as contactInfo } from './contactInfo';
 export { default as services } from './services';
 export { default as projects } from './projects';
-export { default as sustainability } from './sustainability';

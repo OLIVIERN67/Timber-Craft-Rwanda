@@ -1,8 +1,8 @@
+// Titles/descriptions live in translation files under "services.items.<id>".
+// This file only holds non-text data: ids and image paths.
 const services = [
   {
     id: 1,
-    title: "Custom Furniture",
-    description: "Tailor-made furniture for your home or office.",
     image: "/images/img96.jpeg",
     gallery: [
       "/images/img96.jpeg",
@@ -13,8 +13,6 @@ const services = [
   },
   {
     id: 2,
-    title: "Interior Design",
-    description: "Professional interior wood finishing and design.",
     image: "/images/img100.jpeg",
     gallery: [
       "/images/img100.jpeg",
@@ -25,8 +23,6 @@ const services = [
   },
   {
     id: 3,
-    title: "Timber Processing",
-    description: "High-quality wood processing and treatment.",
     image: "/images/img104.jpeg",
     gallery: [
       "/images/img104.jpeg",
@@ -37,8 +33,6 @@ const services = [
   },
   {
     id: 4,
-    title: "Consultation",
-    description: "Expert advice on wood types and project planning.",
     image: "/images/img108.jpeg",
     gallery: [
       "/images/img108.jpeg",

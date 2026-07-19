@@ -1,8 +1,8 @@
+// Titles/descriptions live in translation files under "products.items.<id>".
+// This file only holds non-text data: ids and image paths.
 const products = [
   {
     id: 1,
-    title: "Home Furniture",
-    description: "Beds, Tables, Chairs, Cabinets, Sofas, Shelves and more.",
     image: "/images/img71.jpeg",
     gallery: [
       "/images/img71.jpeg",
@@ -13,8 +13,6 @@ const products = [
   },
   {
     id: 2,
-    title: "Doors & Windows",
-    description: "High quality wooden doors, windows and frames.",
     image: "/images/img72.jpeg",
     gallery: [
       "/images/img72.jpeg",
@@ -25,8 +23,6 @@ const products = [
   },
   {
     id: 3,
-    title: "Office Furniture",
-    description: "Desks, Meeting tables, Cabinets and other office solutions.",
     image: "/images/img73.jpeg",
     gallery: [
       "/images/img73.jpeg",
@@ -37,8 +33,6 @@ const products = [
   },
   {
     id: 4,
-    title: "Interior Finishing",
-    description: "Ceilings, Wall panels, Flooring, Decorative and more.",
     image: "/images/img74.jpeg",
     gallery: [
       "/images/img74.jpeg",
@@ -49,8 +43,6 @@ const products = [
   },
   {
     id: 5,
-    title: "Packaging Solutions",
-    description: "Wooden pallets, crates, cable drums and more.",
     image: "/images/img75.jpeg",
     gallery: [
       "/images/img75.jpeg",
@@ -61,8 +53,6 @@ const products = [
   },
   {
     id: 6,
-    title: "Timber Supply",
-    description: "Processed timber and raw wood supply.",
     image: "/images/img76.jpeg",
     gallery: [
       "/images/img76.jpeg",

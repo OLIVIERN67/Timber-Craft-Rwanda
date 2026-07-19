@@ -1,0 +1,251 @@
+{
+  "meta": {
+    "home": {
+      "title": "TimberCraft Rwanda | Ubuhanga Bwiza, Umurage Uhoraho",
+      "description": "Ibicuruzwa by'ibiti byiza cyane, ibikoresho byo mu nzu bikorewe ku giti cyawe, n'ibisubizo by'ibiti birambye bikorerwa mu Rwanda."
+    },
+    "about": {
+      "title": "Abo Turi Bo | TimberCraft Rwanda",
+      "description": "Menya TimberCraft Rwanda, isosiyete y'Abanyarwanda ikora ibiti ihuza ubuhanga gakondo n'ikoranabuhanga rigezweho."
+    },
+    "products": {
+      "title": "Ibicuruzwa Byacu | TimberCraft Rwanda",
+      "description": "Reba urutonde rw'ibicuruzwa byacu by'ibiti: ibikoresho by'inzu, imiryango n'amadirishya, ibikoresho by'ibiro, gusoza imbere, ibisubizo byo gupakira, n'igurishwa ry'ibiti."
+    },
+    "services": {
+      "title": "Serivisi Zacu | TimberCraft Rwanda",
+      "description": "Ibisubizo byuzuye byo gukora no gutunganya ibiti, birimo ibikoresho bikorerwa ku giti cyawe, gushushanya imbere, gutunganya ibiti, n'ubujyanama."
+    },
+    "projects": {
+      "title": "Imishinga Yacu | TimberCraft Rwanda",
+      "description": "Reba imishinga twarangije mu mazu, ibigo by'ubucuruzi, n'ahantu ho kwakira abashyitsi hirya no hino mu Rwanda."
+    },
+    "sustainability": {
+      "title": "Ibidukikije | TimberCraft Rwanda",
+      "description": "Ibihango byacu byo kubona ibiti mu buryo burambye, umusaruro witaho ibidukikije, gutera amashyamba, n'inyungu ku baturage."
+    },
+    "contact": {
+      "title": "Twandikire | TimberCraft Rwanda",
+      "description": "Twandikire kuri TimberCraft Rwanda ku bibazo, ibiciro, cyangwa ikindi kintu cyose ku bijyanye n'ibicuruzwa na serivisi zacu z'ibiti."
+    }
+  },
+
+  "nav": {
+    "home": "Ahabanza",
+    "about": "Abo Turi Bo",
+    "products": "Ibicuruzwa",
+    "services": "Serivisi",
+    "projects": "Imishinga",
+    "sustainability": "Ibidukikije",
+    "contact": "Twandikire",
+    "toggleMenu": "Fungura cyangwa ufunge urutonde"
+  },
+
+  "common": {
+    "viewMore": "Reba Byinshi",
+    "loading": "Turimo Gutegura...",
+    "requestQuote": "Saba Igiciro",
+    "getInTouch": "Twandikire",
+    "startYourProject": "Tangira Umushinga Wawe",
+    "viewFullSize": "Reba ifoto yuzuye",
+    "yearsOfExcellence": "Imyaka y'Ubunyangamugayo",
+    "home": "Ahabanza"
+  },
+
+  "hero": {
+    "badge": "Imyaka Irenga 10 y'Ubuhanga bw'Abanyarwanda",
+    "titleLine1": "Ubuhanga Bwiza.",
+    "titleLine2": "Umurage Uhoraho.",
+    "subtitle": "Ibicuruzwa by'ibiti byiza cyane, ibikoresho byo mu nzu bikorewe ku giti cyawe, n'ibisubizo by'ibiti birambye bikorerwa mu Rwanda.",
+    "ctaPrimary": "Reba Ibicuruzwa Byacu",
+    "ctaSecondary": "Saba Igiciro"
+  },
+
+  "features": {
+    "items": {
+      "1": { "title": "Ubuhanga Bwiza", "description": "Abakozi b'inzobere batanga ubwiza muri buri gikoresho." },
+      "2": { "title": "Ibiti Birambye", "description": "Ibiti tubona mu buryo bwizewe kugira ngo ejo hazaza habe heza." },
+      "3": { "title": "Imyubakire Yihariye", "description": "Duhindura ibitekerezo byanyu mu bikorwa hifashishijwe imyubakire idasanzwe." },
+      "4": { "title": "Bikomeye kandi Byizewe", "description": "Ibicuruzwa bikomeye, bimara igihe kirekire, byakozwe neza." },
+      "5": { "title": "Kugeza ku Gihe", "description": "Kugeza no kwinjiza ibicuruzwa ku gihe cyagenwe, buri gihe." },
+      "6": { "title": "Serivisi ku Bakiriya", "description": "Turi hafi yanyu buri gihe kugira ngo tubakorere neza." }
+    }
+  },
+
+  "productsSection": {
+    "eyebrow": "Ibicuruzwa Byacu",
+    "title": "Ibicuruzwa by'Ibiti kuri Buri Bukenerwa"
+  },
+
+  "products": {
+    "items": {
+      "1": { "title": "Ibikoresho by'Inzu", "description": "Uburiri, ameza, intebe, amakabine, sofa, ubwato bw'ibitabo n'ibindi byinshi." },
+      "2": { "title": "Imiryango n'Amadirishya", "description": "Imiryango, amadirishya n'imbago by'ibiti bifite ireme rihanitse." },
+      "3": { "title": "Ibikoresho by'Ibiro", "description": "Ameza y'akazi, ameza y'inama, amakabine n'ibindi bikoresho by'ibiro." },
+      "4": { "title": "Gusoza Imbere mu Nzu", "description": "Igisenge, ipangaza ry'inkuta, ubuso bw'ubutaka, ibishushanyo n'ibindi byinshi." },
+      "5": { "title": "Ibisubizo byo Gupakira", "description": "Ibipangu by'ibiti, udusanduku, ibirundo by'imigozi n'ibindi byinshi." },
+      "6": { "title": "Igurishwa ry'Ibiti", "description": "Ibiti byatunganyijwe n'ibiti bitarakorwaho." }
+    }
+  },
+
+  "about": {
+    "eyebrow": "Abo Turi Bo",
+    "title": "Abo Turi Bo",
+    "description": "TimberCraft Rwanda ni isosiyete y'Abanyarwanda ikora ibiti, yihariye mu bicuruzwa by'ibiti by'ireme rihanitse mu mazu, ubucuruzi, n'imishinga y'ubwubatsi. Duhuza ubuhanga gakondo n'ikoranabuhanga rigezweho kugira ngo dukore ibisubizo by'ibiti bikomeye, byiza, kandi birambye.",
+    "visionLabel": "Icyerekezo Cyacu",
+    "vision": "Kuba isosiyete y'imbere mu Rwanda mu bicuruzwa by'ibiti n'ibindi bikomoka ku biti.",
+    "missionLabel": "Intego Yacu",
+    "mission": "Guhindura ibikomoka ku biti biboneka mu gihugu bikaba ibicuruzwa by'urwego rw'isi, mu gihe dukora akazi kandi dushyigikira iterambere rirambye."
+  },
+
+  "statistics": {
+    "items": {
+      "1": { "label": "Abakiriya Banyuzwe" },
+      "2": { "label": "Imishinga Yarangiye" },
+      "3": { "label": "Imyaka y'Uburambe" },
+      "4": { "label": "Ingamba Zirambye" }
+    }
+  },
+
+  "cta": {
+    "title": "Ufite Umushinga mu Mutwe?",
+    "subtitle": "Reka twubake hamwe ikintu cyiza.",
+    "button": "Twandikire Uyu Munsi",
+    "points": {
+      "1": { "title": "Ubujyanama ku Buntu", "description": "Ganira n'inzobere zacu ku bitekerezo byawe." },
+      "2": { "title": "Ibisubizo Byihariye", "description": "Dukora ibisubizo bihuye n'ibyo ukeneye." },
+      "3": { "title": "Ireme Ryiza Kurusha Ayandi", "description": "Ireme rihanitse ku giciro gishoboka." }
+    }
+  },
+
+  "footer": {
+    "tagline": "Ibicuruzwa by'ibiti byiza cyane, ibikoresho byo mu nzu bikorewe ku giti cyawe, n'ibisubizo by'ibiti birambye bikorerwa mu Rwanda.",
+    "companyHeader": "Isosiyete",
+    "supportHeader": "Ubufasha",
+    "contactHeader": "Twandikire",
+    "links": {
+      "about": "Abo Turi Bo",
+      "products": "Ibicuruzwa",
+      "services": "Serivisi",
+      "projects": "Imishinga",
+      "sustainability": "Ibidukikije",
+      "contact": "Twandikire",
+      "faq": "Ibibazo Bikunze Kubazwa"
+    },
+    "copyright": "TimberCraft Rwanda. Uburenganzira bwose bwihariwe.",
+    "footerTagline": "Ubuhanga Bwiza. Umurage Uhoraho."
+  },
+
+  "productsPage": {
+    "title": "Ibicuruzwa Byacu",
+    "subtitle": "Ibicuruzwa by'ibiti by'ireme rihanitse byakorewe buri mwanya"
+  },
+
+  "aboutPage": {
+    "title": "Abo Turi Bo kuri TimberCraft Rwanda"
+  },
+
+  "servicesPage": {
+    "title": "Serivisi Zacu",
+    "subtitle": "Ibisubizo byuzuye byo gukora no gutunganya ibiti ku bikenewe byawe byose",
+    "noServices": "Nta serivisi ibonetse"
+  },
+
+  "services": {
+    "items": {
+      "1": { "title": "Ibikoresho Byihariye", "description": "Ibikoresho byo mu nzu cyangwa ibiro bikorewe ku giti cyawe." },
+      "2": { "title": "Gushushanya Imbere", "description": "Gusoza no gushushanya imbere mu buhanga bw'inzobere." },
+      "3": { "title": "Gutunganya Ibiti", "description": "Gutunganya no gukemura ibiti by'ireme rihanitse." },
+      "4": { "title": "Ubujyanama", "description": "Ubujyanama bw'inzobere ku bwoko bw'ibiti no gutegura umushinga." }
+    }
+  },
+
+  "projectsPage": {
+    "title": "Imishinga Yacu",
+    "subtitle": "Reba imishinga yarangiye igaragaza ubuhanga bwacu",
+    "noProjects": "Nta mushinga ubonetse"
+  },
+
+  "projects": {
+    "items": {
+      "1": { "title": "Inzu Nini y'Ubwiza", "category": "Amazu", "description": "Imbere yose mu biti mu nzu y'ubwiza bw'ikirenga." },
+      "2": { "title": "Ibiro Bigezweho", "category": "Ubucuruzi", "description": "Ameza n'ibitambaro by'ibiro bikorewe ku giti cy'isosiyete y'ikoranabuhanga." },
+      "3": { "title": "Ahantu ho Kuruhukira mu Bidukikije", "category": "Ubukerarugendo", "description": "Amazu mato y'ibiti birambye mu ishyamba ry'ubukerarugendo." }
+    }
+  },
+
+  "sustainabilityPage": {
+    "title": "Ibidukikije",
+    "subtitle": "Ibihango byacu byo gukurikiza imikorere irambye no kubahiriza ibidukikije",
+    "pillars": {
+      "sourcing": {
+        "title": "Kubona Ibiti mu Buryo Burambye",
+        "description": "Dukura ibiti byacu mu mashyamba yemewe akurikiza imikorere irambye yo gucunga amashyamba."
+      },
+      "production": {
+        "title": "Umusaruro Witaho Ibidukikije",
+        "description": "Uburyo bwacu bwo gukora bugabanya imyanda kandi dukoresha uburyo bwitaho ibidukikije."
+      },
+      "reforestation": {
+        "title": "Gutera Amashyamba",
+        "description": "Dufatanya mu mishinga yo gutera amashyamba mu karere, kugira ngo dusubize kamere icyayo."
+      },
+      "community": {
+        "title": "Inyungu ku Baturage",
+        "description": "Duha amahugurwa n'amahirwe y'akazi abakozi b'ubuhanga n'urubyiruko bo mu gace."
+      }
+    }
+  },
+
+  "contactPage": {
+    "title": "Twandikire",
+    "subtitle": "Twandikire ku bibazo, ibiciro, cyangwa ikindi kibazo icyo aricyo cyose",
+    "getInTouch": "Twandikire",
+    "addressLabel": "Aderesi",
+    "phoneLabel": "Telefoni",
+    "emailLabel": "Imeyili",
+    "hoursLabel": "Amasaha y'Akazi",
+    "form": {
+      "heading": "Twoherereze Ubutumwa",
+      "nameLabel": "Amazina Yawe",
+      "namePlaceholder": "Yohani Uwimana",
+      "emailLabel": "Aderesi ya Imeyili",
+      "emailPlaceholder": "yohani@urugero.com",
+      "phoneLabel": "Nimero ya Telefoni",
+      "phonePlaceholder": "+250 788 000 000",
+      "messageLabel": "Ubutumwa",
+      "messagePlaceholder": "Tubwire ibijyanye n'umushinga wawe...",
+      "submit": "Ohereza Ubutumwa",
+      "disclaimer": "Bifungura porogaramu yawe ya imeyili hamwe n'ubu butumwa bumaze kwandikwa — nta makuru yoherezwa cyangwa abikwa kuri seriveri iyo ariyo yose.",
+      "successMessage": "Porogaramu yawe ya imeyili igomba kuba imaze gufungurwa hamwe n'ubutumwa bwawe biteguye koherezwa.",
+      "errors": {
+        "nameRequired": "Nyamuneka andika amazina yawe.",
+        "emailRequired": "Nyamuneka andika aderesi yawe ya imeyili.",
+        "emailInvalid": "Nyamuneka andika aderesi ya imeyili yemewe.",
+        "messageRequired": "Nyamuneka andika ubutumwa."
+      }
+    }
+  },
+
+  "productDetail": {
+    "notFound": "Igicuruzwa nticyabonetse",
+    "backToProducts": "Subira ku Bicuruzwa"
+  },
+
+  "serviceDetail": {
+    "notFound": "Serivisi ntiyabonetse",
+    "backToServices": "Subira kuri Serivisi"
+  },
+
+  "projectDetail": {
+    "notFound": "Umushinga ntiwabonetse",
+    "backToProjects": "Subira ku Mishinga"
+  },
+
+  "language": {
+    "switchLabel": "Hitamo Ururimi",
+    "en": "Icyongereza",
+    "rw": "Ikinyarwanda",
+    "fr": "Igifaransa"
+  }
+}

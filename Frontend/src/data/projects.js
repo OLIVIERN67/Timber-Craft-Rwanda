@@ -1,9 +1,9 @@
+// Titles/categories/descriptions live in translation files under
+// "projects.items.<id>". This file only holds non-text data: ids and
+// image paths.
 const projects = [
   {
     id: 1,
-    title: "Luxury Villa",
-    category: "Residential",
-    description: "Complete wood interior for a high-end villa.",
     image: "/images/img112.jpeg",
     gallery: [
       "/images/img112.jpeg",
@@ -14,9 +14,6 @@ const projects = [
   },
   {
     id: 2,
-    title: "Modern Office",
-    category: "Commercial",
-    description: "Custom desks and partitions for a tech company.",
     image: "/images/img116.jpeg",
     gallery: [
       "/images/img116.jpeg",
@@ -27,9 +24,6 @@ const projects = [
   },
   {
     id: 3,
-    title: "Eco Lodge",
-    category: "Hospitality",
-    description: "Sustainable wood cabins in a forest resort.",
     image: "/images/img120.jpeg",
     gallery: [
       "/images/img120.jpeg",

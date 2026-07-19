@@ -1,34 +1,12 @@
+// Titles/descriptions live in translation files under "features.items.<id>".
+// This file only holds the stable ids used to look up icons and translations.
 const features = [
-  {
-    id: 1,
-    title: "Quality Craftsmanship",
-    description: "Skilled artisans delivering excellence in every piece.",
-  },
-  {
-    id: 2,
-    title: "Sustainable Wood",
-    description: "Responsibly sourced timber for a better tomorrow.",
-  },
-  {
-    id: 3,
-    title: "Custom Designs",
-    description: "We bring your ideas to life with unique designs.",
-  },
-  {
-    id: 4,
-    title: "Durable & Reliable",
-    description: "Strong, long-lasting products built to perfection.",
-  },
-  {
-    id: 5,
-    title: "Timely Delivery",
-    description: "On-time delivery & installation you can count on.",
-  },
-  {
-    id: 6,
-    title: "Customer Support",
-    description: "We are always here to serve you better.",
-  },
+  { id: 1 },
+  { id: 2 },
+  { id: 3 },
+  { id: 4 },
+  { id: 5 },
+  { id: 6 },
 ];
 
 export default features;

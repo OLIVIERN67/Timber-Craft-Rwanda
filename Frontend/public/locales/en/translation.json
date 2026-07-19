@@ -1,0 +1,251 @@
+{
+  "meta": {
+    "home": {
+      "title": "TimberCraft Rwanda | Crafting Quality, Building Legacy",
+      "description": "Premium wooden products, custom furniture, and sustainable timber solutions made in Rwanda."
+    },
+    "about": {
+      "title": "About Us | TimberCraft Rwanda",
+      "description": "Learn about TimberCraft Rwanda, a Rwandan wood manufacturing company combining traditional craftsmanship with modern technology."
+    },
+    "products": {
+      "title": "Our Products | TimberCraft Rwanda",
+      "description": "Explore our range of wooden products: home furniture, doors and windows, office furniture, interior finishing, packaging solutions, and timber supply."
+    },
+    "services": {
+      "title": "Our Services | TimberCraft Rwanda",
+      "description": "Comprehensive wood manufacturing and timber solutions including custom furniture, interior design, timber processing, and consultation."
+    },
+    "projects": {
+      "title": "Our Projects | TimberCraft Rwanda",
+      "description": "Explore our portfolio of completed residential, commercial, and hospitality wood projects across Rwanda."
+    },
+    "sustainability": {
+      "title": "Sustainability | TimberCraft Rwanda",
+      "description": "Our commitment to sustainable sourcing, eco-friendly production, reforestation, and community impact."
+    },
+    "contact": {
+      "title": "Contact Us | TimberCraft Rwanda",
+      "description": "Get in touch with TimberCraft Rwanda for inquiries, quotes, or questions about our wooden products and services."
+    }
+  },
+
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "products": "Products",
+    "services": "Services",
+    "projects": "Projects",
+    "sustainability": "Sustainability",
+    "contact": "Contact Us",
+    "toggleMenu": "Toggle menu"
+  },
+
+  "common": {
+    "viewMore": "View More",
+    "loading": "Loading...",
+    "requestQuote": "Request a Quote",
+    "getInTouch": "Get in Touch",
+    "startYourProject": "Start Your Project",
+    "viewFullSize": "View full size",
+    "yearsOfExcellence": "Years of Excellence",
+    "home": "Home"
+  },
+
+  "hero": {
+    "badge": "10+ Years of Rwandan Craftsmanship",
+    "titleLine1": "Crafting Quality.",
+    "titleLine2": "Building Legacy.",
+    "subtitle": "Premium wooden products, custom furniture, and sustainable timber solutions made in Rwanda.",
+    "ctaPrimary": "Explore Our Products",
+    "ctaSecondary": "Request a Quote"
+  },
+
+  "features": {
+    "items": {
+      "1": { "title": "Quality Craftsmanship", "description": "Skilled artisans delivering excellence in every piece." },
+      "2": { "title": "Sustainable Wood", "description": "Responsibly sourced timber for a better tomorrow." },
+      "3": { "title": "Custom Designs", "description": "We bring your ideas to life with unique designs." },
+      "4": { "title": "Durable & Reliable", "description": "Strong, long-lasting products built to perfection." },
+      "5": { "title": "Timely Delivery", "description": "On-time delivery & installation you can count on." },
+      "6": { "title": "Customer Support", "description": "We are always here to serve you better." }
+    }
+  },
+
+  "productsSection": {
+    "eyebrow": "Our Products",
+    "title": "Wooden Products for Every Need"
+  },
+
+  "products": {
+    "items": {
+      "1": { "title": "Home Furniture", "description": "Beds, Tables, Chairs, Cabinets, Sofas, Shelves and more." },
+      "2": { "title": "Doors & Windows", "description": "High quality wooden doors, windows and frames." },
+      "3": { "title": "Office Furniture", "description": "Desks, Meeting tables, Cabinets and other office solutions." },
+      "4": { "title": "Interior Finishing", "description": "Ceilings, Wall panels, Flooring, Decorative and more." },
+      "5": { "title": "Packaging Solutions", "description": "Wooden pallets, crates, cable drums and more." },
+      "6": { "title": "Timber Supply", "description": "Processed timber and raw wood supply." }
+    }
+  },
+
+  "about": {
+    "eyebrow": "About Us",
+    "title": "Who We Are",
+    "description": "TimberCraft Rwanda is a Rwandan wood manufacturing company specializing in high-quality wooden products for homes, businesses, and construction projects. We combine traditional craftsmanship with modern technology to create durable, beautiful, and sustainable wood solutions.",
+    "visionLabel": "Our Vision",
+    "vision": "To become Rwanda's leading timber and wooden products company.",
+    "missionLabel": "Our Mission",
+    "mission": "To transform locally available wood resources into world-class products while creating jobs and supporting sustainable development."
+  },
+
+  "statistics": {
+    "items": {
+      "1": { "label": "Happy Clients" },
+      "2": { "label": "Projects Completed" },
+      "3": { "label": "Years of Experience" },
+      "4": { "label": "Sustainable Practices" }
+    }
+  },
+
+  "cta": {
+    "title": "Have a Project in Mind?",
+    "subtitle": "Let's build something amazing together.",
+    "button": "Contact Us Today",
+    "points": {
+      "1": { "title": "Free Consultation", "description": "Discuss your ideas with our experts." },
+      "2": { "title": "Custom Solutions", "description": "We design solutions that fit your needs." },
+      "3": { "title": "Best Quality", "description": "Premium quality at affordable prices." }
+    }
+  },
+
+  "footer": {
+    "tagline": "Premium wooden products, custom furniture, and sustainable timber solutions made in Rwanda.",
+    "companyHeader": "Company",
+    "supportHeader": "Support",
+    "contactHeader": "Contact Us",
+    "links": {
+      "about": "About Us",
+      "products": "Products",
+      "services": "Services",
+      "projects": "Projects",
+      "sustainability": "Sustainability",
+      "contact": "Contact Us",
+      "faq": "FAQ"
+    },
+    "copyright": "TimberCraft Rwanda. All rights reserved.",
+    "footerTagline": "Crafting Quality. Building Legacy."
+  },
+
+  "productsPage": {
+    "title": "Our Products",
+    "subtitle": "Quality wooden products crafted for every space"
+  },
+
+  "aboutPage": {
+    "title": "About TimberCraft Rwanda"
+  },
+
+  "servicesPage": {
+    "title": "Our Services",
+    "subtitle": "Comprehensive wood manufacturing and timber solutions for all your needs",
+    "noServices": "No services available"
+  },
+
+  "services": {
+    "items": {
+      "1": { "title": "Custom Furniture", "description": "Tailor-made furniture for your home or office." },
+      "2": { "title": "Interior Design", "description": "Professional interior wood finishing and design." },
+      "3": { "title": "Timber Processing", "description": "High-quality wood processing and treatment." },
+      "4": { "title": "Consultation", "description": "Expert advice on wood types and project planning." }
+    }
+  },
+
+  "projectsPage": {
+    "title": "Our Projects",
+    "subtitle": "Explore our portfolio of completed projects showcasing our craftsmanship",
+    "noProjects": "No projects available"
+  },
+
+  "projects": {
+    "items": {
+      "1": { "title": "Luxury Villa", "category": "Residential", "description": "Complete wood interior for a high-end villa." },
+      "2": { "title": "Modern Office", "category": "Commercial", "description": "Custom desks and partitions for a tech company." },
+      "3": { "title": "Eco Lodge", "category": "Hospitality", "description": "Sustainable wood cabins in a forest resort." }
+    }
+  },
+
+  "sustainabilityPage": {
+    "title": "Sustainability",
+    "subtitle": "Our commitment to sustainable practices and environmental responsibility",
+    "pillars": {
+      "sourcing": {
+        "title": "Sustainable Sourcing",
+        "description": "We source our timber from certified forests that follow sustainable management practices."
+      },
+      "production": {
+        "title": "Eco-Friendly Production",
+        "description": "Our production processes minimize waste and use eco-friendly treatments."
+      },
+      "reforestation": {
+        "title": "Reforestation",
+        "description": "We actively participate in local reforestation programs to give back to nature."
+      },
+      "community": {
+        "title": "Community Impact",
+        "description": "We provide training and employment opportunities to local artisans and youth."
+      }
+    }
+  },
+
+  "contactPage": {
+    "title": "Contact Us",
+    "subtitle": "Get in touch with us for inquiries, quotes, or any questions",
+    "getInTouch": "Get in Touch",
+    "addressLabel": "Address",
+    "phoneLabel": "Phone",
+    "emailLabel": "Email",
+    "hoursLabel": "Working Hours",
+    "form": {
+      "heading": "Send Us a Message",
+      "nameLabel": "Your Name",
+      "namePlaceholder": "John Doe",
+      "emailLabel": "Email Address",
+      "emailPlaceholder": "john@example.com",
+      "phoneLabel": "Phone Number",
+      "phonePlaceholder": "+250 788 000 000",
+      "messageLabel": "Message",
+      "messagePlaceholder": "Tell us about your project...",
+      "submit": "Send Message",
+      "disclaimer": "Opens your email app with this message pre-filled — no data is sent to or stored on any server.",
+      "successMessage": "Your email app should now open with your message ready to send.",
+      "errors": {
+        "nameRequired": "Please enter your name.",
+        "emailRequired": "Please enter your email address.",
+        "emailInvalid": "Please enter a valid email address.",
+        "messageRequired": "Please enter a message."
+      }
+    }
+  },
+
+  "productDetail": {
+    "notFound": "Product not found",
+    "backToProducts": "Back to Products"
+  },
+
+  "serviceDetail": {
+    "notFound": "Service not found",
+    "backToServices": "Back to Services"
+  },
+
+  "projectDetail": {
+    "notFound": "Project not found",
+    "backToProjects": "Back to Projects"
+  },
+
+  "language": {
+    "switchLabel": "Select language",
+    "en": "English",
+    "rw": "Kinyarwanda",
+    "fr": "Français"
+  }
+}

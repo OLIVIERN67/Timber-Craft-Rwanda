@@ -1,15 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { ClipboardList, Wrench, Gem } from 'lucide-react';
 import { cta as ctaData } from '../data';
 
 const iconMap = {
-  'Free Consultation': ClipboardList,
-  'Custom Solutions': Wrench,
-  'Best Quality': Gem,
+  1: ClipboardList,
+  2: Wrench,
+  3: Gem,
 };
 
 const CTA = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="section-padding bg-white">
       <div className="container-custom">
@@ -26,20 +29,20 @@ const CTA = () => {
           )}
 
           <div className="relative z-10 max-w-3xl">
-            <h2 className="text-3xl md:text-4xl font-display font-semibold mb-3 tracking-tight">{ctaData.title}</h2>
-            <p className="text-lg mb-10 opacity-90">{ctaData.subtitle}</p>
+            <h2 className="text-3xl md:text-4xl font-display font-semibold mb-3 tracking-tight">{t('cta.title')}</h2>
+            <p className="text-lg mb-10 opacity-90">{t('cta.subtitle')}</p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-              {ctaData.points?.map((point) => {
-                const Icon = iconMap[point.title];
+              {ctaData.pointIds.map((id) => {
+                const Icon = iconMap[id];
                 return (
-                  <div key={point.id} className="flex items-center gap-4">
+                  <div key={id} className="flex items-center gap-4">
                     <div className="w-12 h-12 shrink-0 bg-timbercraft-green/30 rounded-full flex items-center justify-center border border-white/20">
                       {Icon && <Icon size={20} strokeWidth={1.75} />}
                     </div>
                     <div className="text-left">
-                      <h4 className="font-display font-semibold mb-1">{point.title}</h4>
-                      <p className="text-xs text-gray-300">{point.description}</p>
+                      <h4 className="font-display font-semibold mb-1">{t(`cta.points.${id}.title`)}</h4>
+                      <p className="text-xs text-gray-300">{t(`cta.points.${id}.description`)}</p>
                     </div>
                   </div>
                 );
@@ -50,7 +53,7 @@ const CTA = () => {
               to="/contact"
               className="btn btn-lg border-none bg-timbercraft-wood hover:brightness-110 text-white shadow-lg"
             >
-              Contact Us Today →
+              {t('cta.button')} →
             </Link>
           </div>
         </div>

@@ -1,0 +1,251 @@
+{
+  "meta": {
+    "home": {
+      "title": "TimberCraft Rwanda | Qualité et Héritage",
+      "description": "Produits en bois haut de gamme, mobilier sur mesure et solutions de bois durable fabriqués au Rwanda."
+    },
+    "about": {
+      "title": "À Propos | TimberCraft Rwanda",
+      "description": "Découvrez TimberCraft Rwanda, une entreprise rwandaise de fabrication de bois alliant savoir-faire traditionnel et technologie moderne."
+    },
+    "products": {
+      "title": "Nos Produits | TimberCraft Rwanda",
+      "description": "Découvrez notre gamme de produits en bois : mobilier, portes et fenêtres, mobilier de bureau, finitions intérieures, emballages et fourniture de bois."
+    },
+    "services": {
+      "title": "Nos Services | TimberCraft Rwanda",
+      "description": "Solutions complètes de fabrication et de traitement du bois, incluant le mobilier sur mesure, la décoration intérieure, le traitement du bois et le conseil."
+    },
+    "projects": {
+      "title": "Nos Projets | TimberCraft Rwanda",
+      "description": "Découvrez notre portfolio de projets résidentiels, commerciaux et hôteliers réalisés à travers le Rwanda."
+    },
+    "sustainability": {
+      "title": "Durabilité | TimberCraft Rwanda",
+      "description": "Notre engagement envers un approvisionnement durable, une production écologique, le reboisement et l'impact communautaire."
+    },
+    "contact": {
+      "title": "Contactez-Nous | TimberCraft Rwanda",
+      "description": "Contactez TimberCraft Rwanda pour toute demande, devis ou question concernant nos produits et services en bois."
+    }
+  },
+
+  "nav": {
+    "home": "Accueil",
+    "about": "À Propos",
+    "products": "Produits",
+    "services": "Services",
+    "projects": "Projets",
+    "sustainability": "Durabilité",
+    "contact": "Contact",
+    "toggleMenu": "Afficher le menu"
+  },
+
+  "common": {
+    "viewMore": "Voir Plus",
+    "loading": "Chargement...",
+    "requestQuote": "Demander un Devis",
+    "getInTouch": "Nous Contacter",
+    "startYourProject": "Démarrer Votre Projet",
+    "viewFullSize": "Voir en taille réelle",
+    "yearsOfExcellence": "Années d'Excellence",
+    "home": "Accueil"
+  },
+
+  "hero": {
+    "badge": "Plus de 10 ans de savoir-faire rwandais",
+    "titleLine1": "Qualité Artisanale.",
+    "titleLine2": "Héritage Durable.",
+    "subtitle": "Produits en bois haut de gamme, mobilier sur mesure et solutions de bois durable fabriqués au Rwanda.",
+    "ctaPrimary": "Découvrir Nos Produits",
+    "ctaSecondary": "Demander un Devis"
+  },
+
+  "features": {
+    "items": {
+      "1": { "title": "Savoir-Faire de Qualité", "description": "Des artisans qualifiés qui excellent dans chaque pièce." },
+      "2": { "title": "Bois Durable", "description": "Bois d'œuvre responsable pour un avenir meilleur." },
+      "3": { "title": "Designs Personnalisés", "description": "Nous donnons vie à vos idées avec des designs uniques." },
+      "4": { "title": "Solide et Fiable", "description": "Des produits robustes et durables, conçus à la perfection." },
+      "5": { "title": "Livraison Ponctuelle", "description": "Livraison et installation dans les délais, garanties." },
+      "6": { "title": "Service Client", "description": "Nous sommes toujours là pour mieux vous servir." }
+    }
+  },
+
+  "productsSection": {
+    "eyebrow": "Nos Produits",
+    "title": "Des Produits en Bois pour Chaque Besoin"
+  },
+
+  "products": {
+    "items": {
+      "1": { "title": "Mobilier Maison", "description": "Lits, tables, chaises, armoires, canapés, étagères et plus encore." },
+      "2": { "title": "Portes & Fenêtres", "description": "Portes, fenêtres et cadres en bois de haute qualité." },
+      "3": { "title": "Mobilier de Bureau", "description": "Bureaux, tables de réunion, armoires et autres solutions de bureau." },
+      "4": { "title": "Finitions Intérieures", "description": "Plafonds, panneaux muraux, revêtements de sol, éléments décoratifs et plus." },
+      "5": { "title": "Solutions d'Emballage", "description": "Palettes en bois, caisses, touret à câbles et plus encore." },
+      "6": { "title": "Fourniture de Bois", "description": "Bois transformé et bois brut." }
+    }
+  },
+
+  "about": {
+    "eyebrow": "À Propos",
+    "title": "Qui Sommes-Nous",
+    "description": "TimberCraft Rwanda est une entreprise rwandaise de fabrication de bois spécialisée dans les produits en bois de haute qualité pour les maisons, les entreprises et les projets de construction. Nous combinons le savoir-faire traditionnel avec la technologie moderne pour créer des solutions en bois durables, belles et respectueuses de l'environnement.",
+    "visionLabel": "Notre Vision",
+    "vision": "Devenir la première entreprise de bois et de produits en bois du Rwanda.",
+    "missionLabel": "Notre Mission",
+    "mission": "Transformer les ressources en bois disponibles localement en produits de classe mondiale tout en créant des emplois et en soutenant le développement durable."
+  },
+
+  "statistics": {
+    "items": {
+      "1": { "label": "Clients Satisfaits" },
+      "2": { "label": "Projets Réalisés" },
+      "3": { "label": "Années d'Expérience" },
+      "4": { "label": "Pratiques Durables" }
+    }
+  },
+
+  "cta": {
+    "title": "Vous Avez un Projet en Tête ?",
+    "subtitle": "Construisons ensemble quelque chose d'extraordinaire.",
+    "button": "Contactez-Nous Aujourd'hui",
+    "points": {
+      "1": { "title": "Consultation Gratuite", "description": "Discutez de vos idées avec nos experts." },
+      "2": { "title": "Solutions Personnalisées", "description": "Nous concevons des solutions adaptées à vos besoins." },
+      "3": { "title": "Meilleure Qualité", "description": "Une qualité premium à des prix abordables." }
+    }
+  },
+
+  "footer": {
+    "tagline": "Produits en bois haut de gamme, mobilier sur mesure et solutions de bois durable fabriqués au Rwanda.",
+    "companyHeader": "Entreprise",
+    "supportHeader": "Assistance",
+    "contactHeader": "Contact",
+    "links": {
+      "about": "À Propos",
+      "products": "Produits",
+      "services": "Services",
+      "projects": "Projets",
+      "sustainability": "Durabilité",
+      "contact": "Contact",
+      "faq": "FAQ"
+    },
+    "copyright": "TimberCraft Rwanda. Tous droits réservés.",
+    "footerTagline": "Qualité Artisanale. Héritage Durable."
+  },
+
+  "productsPage": {
+    "title": "Nos Produits",
+    "subtitle": "Des produits en bois de qualité conçus pour chaque espace"
+  },
+
+  "aboutPage": {
+    "title": "À Propos de TimberCraft Rwanda"
+  },
+
+  "servicesPage": {
+    "title": "Nos Services",
+    "subtitle": "Des solutions complètes de fabrication et de traitement du bois pour tous vos besoins",
+    "noServices": "Aucun service disponible"
+  },
+
+  "services": {
+    "items": {
+      "1": { "title": "Mobilier Sur Mesure", "description": "Mobilier fait sur mesure pour votre maison ou votre bureau." },
+      "2": { "title": "Décoration Intérieure", "description": "Finition et décoration intérieure en bois de qualité professionnelle." },
+      "3": { "title": "Traitement du Bois", "description": "Traitement et transformation du bois de haute qualité." },
+      "4": { "title": "Consultation", "description": "Conseils d'experts sur les types de bois et la planification de projets." }
+    }
+  },
+
+  "projectsPage": {
+    "title": "Nos Projets",
+    "subtitle": "Découvrez notre portfolio de projets réalisés qui mettent en valeur notre savoir-faire",
+    "noProjects": "Aucun projet disponible"
+  },
+
+  "projects": {
+    "items": {
+      "1": { "title": "Villa de Luxe", "category": "Résidentiel", "description": "Aménagement intérieur en bois complet pour une villa haut de gamme." },
+      "2": { "title": "Bureau Moderne", "category": "Commercial", "description": "Bureaux et cloisons sur mesure pour une entreprise technologique." },
+      "3": { "title": "Éco-Lodge", "category": "Hôtellerie", "description": "Cabanes en bois durable dans un complexe forestier." }
+    }
+  },
+
+  "sustainabilityPage": {
+    "title": "Durabilité",
+    "subtitle": "Notre engagement envers des pratiques durables et la responsabilité environnementale",
+    "pillars": {
+      "sourcing": {
+        "title": "Approvisionnement Durable",
+        "description": "Nous approvisionnons notre bois auprès de forêts certifiées qui appliquent des pratiques de gestion durable."
+      },
+      "production": {
+        "title": "Production Écologique",
+        "description": "Nos processus de production minimisent les déchets et utilisent des traitements respectueux de l'environnement."
+      },
+      "reforestation": {
+        "title": "Reboisement",
+        "description": "Nous participons activement à des programmes de reboisement locaux pour redonner à la nature."
+      },
+      "community": {
+        "title": "Impact Communautaire",
+        "description": "Nous offrons des formations et des opportunités d'emploi aux artisans et aux jeunes locaux."
+      }
+    }
+  },
+
+  "contactPage": {
+    "title": "Contactez-Nous",
+    "subtitle": "Contactez-nous pour toute demande, devis ou question",
+    "getInTouch": "Nous Contacter",
+    "addressLabel": "Adresse",
+    "phoneLabel": "Téléphone",
+    "emailLabel": "E-mail",
+    "hoursLabel": "Heures d'Ouverture",
+    "form": {
+      "heading": "Envoyez-Nous un Message",
+      "nameLabel": "Votre Nom",
+      "namePlaceholder": "Jean Dupont",
+      "emailLabel": "Adresse E-mail",
+      "emailPlaceholder": "jean@exemple.com",
+      "phoneLabel": "Numéro de Téléphone",
+      "phonePlaceholder": "+250 788 000 000",
+      "messageLabel": "Message",
+      "messagePlaceholder": "Parlez-nous de votre projet...",
+      "submit": "Envoyer le Message",
+      "disclaimer": "Ouvre votre application e-mail avec ce message pré-rempli — aucune donnée n'est envoyée ou stockée sur un serveur.",
+      "successMessage": "Votre application e-mail devrait maintenant s'ouvrir avec votre message prêt à être envoyé.",
+      "errors": {
+        "nameRequired": "Veuillez entrer votre nom.",
+        "emailRequired": "Veuillez entrer votre adresse e-mail.",
+        "emailInvalid": "Veuillez entrer une adresse e-mail valide.",
+        "messageRequired": "Veuillez entrer un message."
+      }
+    }
+  },
+
+  "productDetail": {
+    "notFound": "Produit introuvable",
+    "backToProducts": "Retour aux Produits"
+  },
+
+  "serviceDetail": {
+    "notFound": "Service introuvable",
+    "backToServices": "Retour aux Services"
+  },
+
+  "projectDetail": {
+    "notFound": "Projet introuvable",
+    "backToProjects": "Retour aux Projets"
+  },
+
+  "language": {
+    "switchLabel": "Choisir la langue",
+    "en": "English",
+    "rw": "Kinyarwanda",
+    "fr": "Français"
+  }
+}

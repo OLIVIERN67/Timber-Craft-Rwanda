@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import Home from './pages/Home';
 import AboutPage from './pages/AboutPage';
 import ProductsPage from './pages/ProductsPage';
@@ -12,6 +13,17 @@ import SustainabilityPage from './pages/SustainabilityPage';
 import ContactPage from './pages/ContactPage';
 
 function App() {
+  const { i18n } = useTranslation();
+
+  // Keep <html lang="..."> in sync with the active language for screen
+  // readers, browser translation prompts, and general accessibility.
+  // `resolvedLanguage` is always one of our supported codes (en/rw/fr);
+  // `language` can briefly hold a raw, unnormalized navigator locale string
+  // (e.g. "en-US@posix" on some systems) before i18next settles.
+  useEffect(() => {
+    document.documentElement.lang = i18n.resolvedLanguage || i18n.language;
+  }, [i18n.language, i18n.resolvedLanguage]);
+
   return (
     <div className="App">
       <Routes>
