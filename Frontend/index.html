@@ -4,6 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TimberCraft Rwanda</title>
+    <script>
+      // Runs synchronously, before any CSS or React loads, so the correct
+      // theme is applied on the very first paint — no flash of the wrong
+      // theme. Mirrors the logic in src/contexts/ThemeContext.jsx exactly.
+      (function () {
+        try {
+          var stored = window.localStorage.getItem('tc_theme');
+          var theme = stored === 'light' || stored === 'dark'
+            ? stored
+            : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+          var root = document.documentElement;
+          root.setAttribute('data-theme', theme === 'dark' ? 'timbercraft-dark' : 'timbercraft');
+          root.classList.toggle('dark', theme === 'dark');
+          root.style.colorScheme = theme;
+        } catch (e) {
+          // localStorage/matchMedia unavailable — default to light, same
+          // as the rest of the app would fall back to.
+          document.documentElement.setAttribute('data-theme', 'timbercraft');
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>

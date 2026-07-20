@@ -8,7 +8,7 @@ const Products = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="section-padding bg-timbercraft-cream">
+    <section className="section-padding bg-theme-surface">
       <div className="container-custom">
         <div className="text-center mb-12">
           <p className="eyebrow justify-center">{t('productsSection.eyebrow')}</p>
@@ -26,14 +26,14 @@ const Products = () => {
                 />
               </figure>
               <div className="card-body p-6">
-                <h3 className="card-title text-xl text-timbercraft-dark">
+                <h3 className="card-title text-xl text-theme-text">
                   {t(`products.items.${product.id}.title`)}
                 </h3>
-                <p className="text-gray-600 text-sm mb-2">
+                <p className="text-theme-text-secondary text-sm mb-2">
                   {t(`products.items.${product.id}.description`)}
                 </p>
                 <div className="card-actions">
-                  <Link to={`/products/${product.id}`} className="text-timbercraft-green font-semibold hover:underline inline-flex items-center gap-1 group/link">
+                  <Link to={`/products/${product.id}`} className="text-theme-primary-text font-semibold hover:underline inline-flex items-center gap-1 group/link">
                     {t('common.viewMore')} <ArrowRight size={16} className="transition-transform group-hover/link:translate-x-1" />
                   </Link>
                 </div>

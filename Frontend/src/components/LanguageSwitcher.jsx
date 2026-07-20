@@ -21,7 +21,7 @@ const LanguageSwitcher = ({ variant = 'light' }) => {
     document.activeElement?.blur();
   };
 
-  const textClass = variant === 'dark' ? 'text-white' : 'text-timbercraft-dark';
+  const textClass = variant === 'dark' ? 'text-white' : 'text-theme-text';
 
   return (
     <div className="dropdown dropdown-end">
@@ -36,20 +36,20 @@ const LanguageSwitcher = ({ variant = 'light' }) => {
       </button>
       <ul
         tabIndex={0}
-        className="dropdown-content z-[60] menu mt-2 p-2 shadow-lg bg-white rounded-lg w-40 border border-gray-100"
+        className="dropdown-content z-[60] menu mt-2 p-2 shadow-lg bg-theme-surface rounded-lg w-40 border border-theme-border"
       >
         {SUPPORTED_LANGUAGES.map((lng) => (
           <li key={lng}>
             <button
               type="button"
               onClick={() => handleSelect(lng)}
-              className="flex items-center justify-between text-timbercraft-dark hover:bg-timbercraft-cream rounded-md"
+              className="flex items-center justify-between text-theme-text hover:bg-theme-surface-alt rounded-md"
             >
               <span className="flex items-center gap-2">
                 <span>{LANGUAGE_META[lng].flag}</span>
                 <span>{t(`language.${lng}`)}</span>
               </span>
-              {current === lng && <Check size={14} className="text-timbercraft-green" />}
+              {current === lng && <Check size={14} className="text-theme-primary-text" />}
             </button>
           </li>
         ))}

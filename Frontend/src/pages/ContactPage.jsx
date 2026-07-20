@@ -71,7 +71,7 @@ const ContactPage = () => {
   };
 
   const fieldClass = (field) =>
-    `input input-bordered w-full focus:outline-timbercraft-green ${errors[field] ? 'input-error' : ''}`;
+    `input input-bordered w-full focus:outline-theme-primary ${errors[field] ? 'input-error' : ''}`;
 
   return (
     <div className="min-h-screen">
@@ -83,53 +83,53 @@ const ContactPage = () => {
 
           <div className="grid md:grid-cols-2 gap-12">
             <div>
-              <div className="bg-timbercraft-cream rounded-2xl p-8 border border-black/5">
-                <h2 className="text-2xl font-display font-semibold text-timbercraft-dark mb-6">
+              <div className="bg-theme-surface rounded-2xl p-8 border border-theme-border">
+                <h2 className="text-2xl font-display font-semibold text-theme-text mb-6">
                   {t('contactPage.getInTouch')}
                 </h2>
 
                 <div className="space-y-5">
                   {contactInfo.address && (
                     <div className="flex items-start gap-4">
-                      <div className="w-11 h-11 shrink-0 rounded-full bg-timbercraft-green/10 flex items-center justify-center text-timbercraft-green">
+                      <div className="w-11 h-11 shrink-0 rounded-full bg-theme-primary/10 flex items-center justify-center text-theme-primary-text">
                         <MapPin size={20} />
                       </div>
                       <div>
-                        <p className="font-semibold text-timbercraft-dark">{t('contactPage.addressLabel')}</p>
-                        <p className="text-gray-600">{contactInfo.address}</p>
+                        <p className="font-semibold text-theme-text">{t('contactPage.addressLabel')}</p>
+                        <p className="text-theme-text-secondary">{contactInfo.address}</p>
                       </div>
                     </div>
                   )}
                   {contactInfo.phone && (
                     <div className="flex items-start gap-4">
-                      <div className="w-11 h-11 shrink-0 rounded-full bg-timbercraft-green/10 flex items-center justify-center text-timbercraft-green">
+                      <div className="w-11 h-11 shrink-0 rounded-full bg-theme-primary/10 flex items-center justify-center text-theme-primary-text">
                         <Phone size={20} />
                       </div>
                       <div>
-                        <p className="font-semibold text-timbercraft-dark">{t('contactPage.phoneLabel')}</p>
-                        <p className="text-gray-600">{contactInfo.phone}</p>
+                        <p className="font-semibold text-theme-text">{t('contactPage.phoneLabel')}</p>
+                        <p className="text-theme-text-secondary">{contactInfo.phone}</p>
                       </div>
                     </div>
                   )}
                   {contactInfo.email && (
                     <div className="flex items-start gap-4">
-                      <div className="w-11 h-11 shrink-0 rounded-full bg-timbercraft-green/10 flex items-center justify-center text-timbercraft-green">
+                      <div className="w-11 h-11 shrink-0 rounded-full bg-theme-primary/10 flex items-center justify-center text-theme-primary-text">
                         <Mail size={20} />
                       </div>
                       <div>
-                        <p className="font-semibold text-timbercraft-dark">{t('contactPage.emailLabel')}</p>
-                        <p className="text-gray-600">{contactInfo.email}</p>
+                        <p className="font-semibold text-theme-text">{t('contactPage.emailLabel')}</p>
+                        <p className="text-theme-text-secondary">{contactInfo.email}</p>
                       </div>
                     </div>
                   )}
                   {contactInfo.hours && (
                     <div className="flex items-start gap-4">
-                      <div className="w-11 h-11 shrink-0 rounded-full bg-timbercraft-green/10 flex items-center justify-center text-timbercraft-green">
+                      <div className="w-11 h-11 shrink-0 rounded-full bg-theme-primary/10 flex items-center justify-center text-theme-primary-text">
                         <Clock size={20} />
                       </div>
                       <div>
-                        <p className="font-semibold text-timbercraft-dark">{t('contactPage.hoursLabel')}</p>
-                        <p className="text-gray-600">{contactInfo.hours}</p>
+                        <p className="font-semibold text-theme-text">{t('contactPage.hoursLabel')}</p>
+                        <p className="text-theme-text-secondary">{contactInfo.hours}</p>
                       </div>
                     </div>
                   )}
@@ -138,8 +138,8 @@ const ContactPage = () => {
             </div>
 
             <div>
-              <div className="bg-white rounded-2xl p-8 shadow-lg border border-black/5">
-                <h2 className="text-2xl font-display font-semibold text-timbercraft-dark mb-6">
+              <div className="bg-theme-surface rounded-2xl p-8 shadow-lg border border-theme-border">
+                <h2 className="text-2xl font-display font-semibold text-theme-text mb-6">
                   {t('contactPage.form.heading')}
                 </h2>
 
@@ -205,7 +205,7 @@ const ContactPage = () => {
                       name="phone"
                       value={formData.phone}
                       onChange={handleChange}
-                      className="input input-bordered w-full focus:outline-timbercraft-green"
+                      className="input input-bordered w-full focus:outline-theme-primary"
                       placeholder={t('contactPage.form.phonePlaceholder')}
                     />
                   </div>
@@ -222,7 +222,7 @@ const ContactPage = () => {
                       aria-invalid={!!errors.message}
                       aria-describedby={errors.message ? 'message-error' : undefined}
                       rows="4"
-                      className={`textarea textarea-bordered w-full focus:outline-timbercraft-green resize-none ${errors.message ? 'textarea-error' : ''}`}
+                      className={`textarea textarea-bordered w-full focus:outline-theme-primary resize-none ${errors.message ? 'textarea-error' : ''}`}
                       placeholder={t('contactPage.form.messagePlaceholder')}
                     />
                     {errors.message && (
@@ -235,7 +235,7 @@ const ContactPage = () => {
                   <button type="submit" className="btn-primary w-full">
                     {t('contactPage.form.submit')}
                   </button>
-                  <p className="text-xs text-gray-500 text-center">
+                  <p className="text-xs text-theme-text-secondary text-center">
                     {t('contactPage.form.disclaimer')}
                   </p>
                 </form>

@@ -12,13 +12,79 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ============================================================
+   THEME SYSTEM — CSS custom properties, single source of truth.
+   Toggled by ThemeContext setting <html data-theme="...">.
+   Tailwind reads these via the `theme-*` color tokens defined in
+   tailwind.config.js, so any `bg-theme-surface`, `text-theme-text`,
+   etc. utility automatically responds to the active theme with no
+   `dark:` prefix needed anywhere.
+   ============================================================ */
+:root {
+  --color-bg: #FFFFFF;
+  --color-surface: #F8F9FA;
+  --color-surface-alt: #F1F3F5;
+  --color-text-primary: #111827;
+  --color-text-secondary: #6B7280;
+  --color-border: #E5E7EB;
+
+  /* Primary is mapped to the TimberCraft brand green rather than a
+     generic blue, so buttons/links/active states stay on-brand while
+     still using the same CSS-variable architecture. See README for how
+     to swap this to a different accent color in one place. */
+  --color-primary: #2D5A27;
+  --color-primary-hover: #1E3D1A;
+  --color-primary-text: #2D5A27; /* same as primary in light mode */
+
+  --shadow-color: 220 3% 15%;
+}
+
+[data-theme='timbercraft-dark'] {
+  --color-bg: #0F172A;
+  --color-surface: #1E293B;
+  --color-surface-alt: #243247;
+  --color-text-primary: #F8FAFC;
+  --color-text-secondary: #CBD5E1;
+  --color-border: #334155;
+
+  /* Two distinct green shades for two distinct roles, both verified to
+     meet WCAG AA (4.5:1) in their actual use case:
+     - primary: solid button fills with white text on top (4.73:1)
+     - primary-text: links/icons/accents sitting directly on the dark
+       background, which needs to be brighter to stay readable (5.53:1) */
+  --color-primary: #43813C;
+  --color-primary-hover: #54A04A;
+  --color-primary-text: #54A04A;
+
+  --shadow-color: 220 40% 2%;
+}
+
+/* Every themeable property transitions smoothly when the theme flips,
+   site-wide, without needing to opt in per component. */
+*,
+*::before,
+*::after {
+  transition-property: background-color, border-color, color, box-shadow, fill, stroke;
+  transition-timing-function: ease;
+  transition-duration: 350ms;
+}
+
+/* Layout-affecting and high-frequency properties are excluded from the
+   blanket transition above so hover/press states, layout shifts, and
+   scrolling stay instant and don't feel sluggish. */
+*:where(.no-theme-transition, .no-theme-transition *) {
+  transition-property: none;
+}
+
 @layer base {
   html {
     scroll-behavior: smooth;
   }
-  
+
   body {
-    @apply font-sans text-timbercraft-dark antialiased;
+    @apply font-sans antialiased;
+    background-color: var(--color-bg);
+    color: var(--color-text-primary);
     margin: 0;
     padding: 0;
   }
@@ -28,7 +94,9 @@
   }
 
   :focus-visible {
-    @apply outline-none ring-2 ring-timbercraft-green ring-offset-2 ring-offset-white rounded-sm;
+    outline: none;
+    box-shadow: 0 0 0 2px var(--color-bg), 0 0 0 4px var(--color-primary);
+    border-radius: 2px;
   }
 }
 
@@ -42,18 +110,27 @@
   }
   
   .btn-primary {
-    @apply btn border-none bg-timbercraft-green text-white px-6 hover:bg-timbercraft-dark-green
-           shadow-md hover:shadow-lg transition-all duration-300;
+    @apply btn border-none text-white px-6 shadow-md hover:shadow-lg transition-all duration-300;
+    background-color: var(--color-primary);
+  }
+  .btn-primary:hover {
+    background-color: var(--color-primary-hover);
   }
   
   .btn-secondary {
-    @apply btn btn-ghost border-2 border-timbercraft-green text-timbercraft-green px-6 bg-transparent
-           hover:bg-timbercraft-green hover:border-timbercraft-green hover:text-white
-           transition-all duration-300;
+    @apply btn btn-ghost px-6 bg-transparent transition-all duration-300;
+    border: 2px solid var(--color-primary);
+    color: var(--color-primary-text);
+  }
+  .btn-secondary:hover {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+    color: #fff;
   }
 
   .eyebrow {
-    @apply inline-flex items-center gap-2 text-timbercraft-green font-semibold uppercase tracking-[0.15em] text-xs md:text-sm mb-3;
+    @apply inline-flex items-center gap-2 font-semibold uppercase tracking-[0.15em] text-xs md:text-sm mb-3;
+    color: var(--color-primary-text);
   }
 
   .eyebrow::before {
@@ -62,12 +139,13 @@
   }
   
   .section-title {
-    @apply text-3xl md:text-4xl lg:text-5xl font-display font-semibold text-timbercraft-dark 
-           mb-4 text-center tracking-tight;
+    @apply text-3xl md:text-4xl lg:text-5xl font-display font-semibold mb-4 text-center tracking-tight;
+    color: var(--color-text-primary);
   }
   
   .section-subtitle {
-    @apply text-base md:text-lg text-gray-600 text-center max-w-3xl mx-auto mb-12 leading-relaxed;
+    @apply text-base md:text-lg text-center max-w-3xl mx-auto mb-12 leading-relaxed;
+    color: var(--color-text-secondary);
   }
   
   .card-hover {
@@ -89,7 +167,7 @@
 .spinner {
   border: 4px solid rgba(45, 90, 39, 0.1);
   border-radius: 50%;
-  border-top: 4px solid #2D5A27;
+  border-top: 4px solid var(--color-primary);
   width: 40px;
   height: 40px;
   animation: spin 1s linear infinite;
@@ -130,20 +208,25 @@
   animation: slideUp 0.6s ease-out;
 }
 
-/* Scroll bar styling */
+/* Scroll bar styling — theme-aware via CSS variables */
 ::-webkit-scrollbar {
   width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: var(--color-surface);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #2D5A27;
+  background: var(--color-primary);
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #1E3D1A;
+  background: var(--color-primary-hover);
+}
+
+html {
+  scrollbar-color: var(--color-primary) var(--color-surface);
+  scrollbar-width: thin;
 }

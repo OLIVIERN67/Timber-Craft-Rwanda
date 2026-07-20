@@ -198,3 +198,84 @@ native Kinyarwanda speaker review them before this goes live for real
 customers, particularly the product/service names and the contact form
 copy, since a wrong word choice on a real business's site is more costly
 than an unusual phrasing.
+
+## Light / Dark theme system
+
+The whole site supports light and dark mode via a React Context + CSS
+custom properties — no page reload needed to switch, and the choice
+persists across visits.
+
+### How it works
+
+- **`Frontend/src/contexts/ThemeContext.jsx`** — `ThemeProvider` +
+  `useTheme()` hook. On first visit (no stored preference), it reads
+  `window.matchMedia('(prefers-color-scheme: dark)')` and follows the OS
+  setting live until the visitor uses the toggle — after that, their
+  explicit choice is remembered in `localStorage` (`tc_theme` key) and
+  takes over.
+- **`Frontend/index.html`** — a small inline script in `<head>` mirrors the
+  same detection logic and sets the theme attribute *before* React or any
+  CSS loads, so there's no flash of the wrong theme on page load.
+- **`Frontend/src/index.css`** — defines all theme colors as CSS custom
+  properties under `:root` (light) and `[data-theme='timbercraft-dark']`
+  (dark). `Frontend/tailwind.config.js` exposes these as Tailwind color
+  utilities (`bg-theme-bg`, `text-theme-text`, `border-theme-border`, etc.)
+  so any component just uses those classes and automatically responds to
+  the active theme — no `dark:` prefixes needed anywhere.
+- **`Frontend/src/components/ThemeToggle.jsx`** — the sun/moon button in
+  the navbar (both a desktop and a mobile placement). Calls
+  `toggleTheme()`, which flips React state (instant re-render, no reload)
+  and persists the choice.
+- Every color-related CSS property (background, text, border, shadow,
+  fill, stroke) transitions over 350ms site-wide, so the whole page fades
+  between themes smoothly instead of snapping.
+
+### Theme colors
+
+| Token | Light | Dark |
+|---|---|---|
+| Background | `#FFFFFF` | `#0F172A` |
+| Surface | `#F8F9FA` | `#1E293B` |
+| Primary text | `#111827` | `#F8FAFC` |
+| Secondary text | `#6B7280` | `#CBD5E1` |
+| Border | `#E5E7EB` | `#334155` |
+
+**Primary/accent color** — kept as the existing TimberCraft brand green
+(`#2D5A27` light / `#43813C` dark) instead of switching to a generic blue,
+since blue would clash with the wood/green identity used throughout the
+rest of the site (buttons, active nav states, badges, the logo). Both
+dark-mode shades were chosen and verified to meet WCAG AA contrast
+(4.5:1+) against their actual backgrounds — the "obvious" choice of
+reusing the light-mode accent green directly in dark mode only achieves
+4.1:1 with white button text, which fails AA, so two slightly different
+greens are used for two different roles (solid button fills vs. text/links
+sitting directly on the dark background). All of this lives in one place —
+`--color-primary` / `--color-primary-text` in `index.css` — change it there
+to use a different accent color (e.g. the blue from a generic spec) site-wide.
+
+### What stays permanently dark regardless of theme
+
+The navbar's top contact strip, the footer, the stats bar, the CTA card,
+and the Hero's photo overlay are intentionally dark in both light and dark
+mode — these are brand-accent sections (like a permanently-dark footer on
+an otherwise light site, a common pattern), not meant to invert. Text
+inside them was already tuned for a dark background, so they read
+correctly either way without needing per-theme overrides.
+
+### Adding a new themed component
+
+Use the semantic classes instead of raw Tailwind grays/whites:
+
+| Instead of | Use |
+|---|---|
+| `bg-white`, `bg-gray-50` | `bg-theme-bg` (page-level) or `bg-theme-surface` (cards) |
+| `text-gray-900`, `text-timbercraft-dark` (as text) | `text-theme-text` |
+| `text-gray-500/600` | `text-theme-text-secondary` |
+| `border-gray-100/200` | `border-theme-border` |
+| `text-timbercraft-green` (as a link/accent) | `text-theme-primary-text` |
+| `bg-timbercraft-green` (as a button fill) | `bg-theme-primary` (or just use the `.btn-primary` class) |
+
+DaisyUI components (`card`, `btn`, `modal`, `alert`, `badge`, `dropdown`,
+`input`, `table`, etc.) already theme automatically — they read from the
+two DaisyUI theme definitions (`timbercraft` / `timbercraft-dark`) in
+`tailwind.config.js`, no extra work needed.

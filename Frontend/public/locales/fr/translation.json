@@ -29,7 +29,6 @@
       "description": "Contactez TimberCraft Rwanda pour toute demande, devis ou question concernant nos produits et services en bois."
     }
   },
-
   "nav": {
     "home": "Accueil",
     "about": "À Propos",
@@ -40,7 +39,6 @@
     "contact": "Contact",
     "toggleMenu": "Afficher le menu"
   },
-
   "common": {
     "viewMore": "Voir Plus",
     "loading": "Chargement...",
@@ -51,7 +49,6 @@
     "yearsOfExcellence": "Années d'Excellence",
     "home": "Accueil"
   },
-
   "hero": {
     "badge": "Plus de 10 ans de savoir-faire rwandais",
     "titleLine1": "Qualité Artisanale.",
@@ -60,34 +57,66 @@
     "ctaPrimary": "Découvrir Nos Produits",
     "ctaSecondary": "Demander un Devis"
   },
-
   "features": {
     "items": {
-      "1": { "title": "Savoir-Faire de Qualité", "description": "Des artisans qualifiés qui excellent dans chaque pièce." },
-      "2": { "title": "Bois Durable", "description": "Bois d'œuvre responsable pour un avenir meilleur." },
-      "3": { "title": "Designs Personnalisés", "description": "Nous donnons vie à vos idées avec des designs uniques." },
-      "4": { "title": "Solide et Fiable", "description": "Des produits robustes et durables, conçus à la perfection." },
-      "5": { "title": "Livraison Ponctuelle", "description": "Livraison et installation dans les délais, garanties." },
-      "6": { "title": "Service Client", "description": "Nous sommes toujours là pour mieux vous servir." }
+      "1": {
+        "title": "Savoir-Faire de Qualité",
+        "description": "Des artisans qualifiés qui excellent dans chaque pièce."
+      },
+      "2": {
+        "title": "Bois Durable",
+        "description": "Bois d'œuvre responsable pour un avenir meilleur."
+      },
+      "3": {
+        "title": "Designs Personnalisés",
+        "description": "Nous donnons vie à vos idées avec des designs uniques."
+      },
+      "4": {
+        "title": "Solide et Fiable",
+        "description": "Des produits robustes et durables, conçus à la perfection."
+      },
+      "5": {
+        "title": "Livraison Ponctuelle",
+        "description": "Livraison et installation dans les délais, garanties."
+      },
+      "6": {
+        "title": "Service Client",
+        "description": "Nous sommes toujours là pour mieux vous servir."
+      }
     }
   },
-
   "productsSection": {
     "eyebrow": "Nos Produits",
     "title": "Des Produits en Bois pour Chaque Besoin"
   },
-
   "products": {
     "items": {
-      "1": { "title": "Mobilier Maison", "description": "Lits, tables, chaises, armoires, canapés, étagères et plus encore." },
-      "2": { "title": "Portes & Fenêtres", "description": "Portes, fenêtres et cadres en bois de haute qualité." },
-      "3": { "title": "Mobilier de Bureau", "description": "Bureaux, tables de réunion, armoires et autres solutions de bureau." },
-      "4": { "title": "Finitions Intérieures", "description": "Plafonds, panneaux muraux, revêtements de sol, éléments décoratifs et plus." },
-      "5": { "title": "Solutions d'Emballage", "description": "Palettes en bois, caisses, touret à câbles et plus encore." },
-      "6": { "title": "Fourniture de Bois", "description": "Bois transformé et bois brut." }
+      "1": {
+        "title": "Mobilier Maison",
+        "description": "Lits, tables, chaises, armoires, canapés, étagères et plus encore."
+      },
+      "2": {
+        "title": "Portes & Fenêtres",
+        "description": "Portes, fenêtres et cadres en bois de haute qualité."
+      },
+      "3": {
+        "title": "Mobilier de Bureau",
+        "description": "Bureaux, tables de réunion, armoires et autres solutions de bureau."
+      },
+      "4": {
+        "title": "Finitions Intérieures",
+        "description": "Plafonds, panneaux muraux, revêtements de sol, éléments décoratifs et plus."
+      },
+      "5": {
+        "title": "Solutions d'Emballage",
+        "description": "Palettes en bois, caisses, touret à câbles et plus encore."
+      },
+      "6": {
+        "title": "Fourniture de Bois",
+        "description": "Bois transformé et bois brut."
+      }
     }
   },
-
   "about": {
     "eyebrow": "À Propos",
     "title": "Qui Sommes-Nous",
@@ -97,27 +126,41 @@
     "missionLabel": "Notre Mission",
     "mission": "Transformer les ressources en bois disponibles localement en produits de classe mondiale tout en créant des emplois et en soutenant le développement durable."
   },
-
   "statistics": {
     "items": {
-      "1": { "label": "Clients Satisfaits" },
-      "2": { "label": "Projets Réalisés" },
-      "3": { "label": "Années d'Expérience" },
-      "4": { "label": "Pratiques Durables" }
+      "1": {
+        "label": "Clients Satisfaits"
+      },
+      "2": {
+        "label": "Projets Réalisés"
+      },
+      "3": {
+        "label": "Années d'Expérience"
+      },
+      "4": {
+        "label": "Pratiques Durables"
+      }
     }
   },
-
   "cta": {
     "title": "Vous Avez un Projet en Tête ?",
     "subtitle": "Construisons ensemble quelque chose d'extraordinaire.",
     "button": "Contactez-Nous Aujourd'hui",
     "points": {
-      "1": { "title": "Consultation Gratuite", "description": "Discutez de vos idées avec nos experts." },
-      "2": { "title": "Solutions Personnalisées", "description": "Nous concevons des solutions adaptées à vos besoins." },
-      "3": { "title": "Meilleure Qualité", "description": "Une qualité premium à des prix abordables." }
+      "1": {
+        "title": "Consultation Gratuite",
+        "description": "Discutez de vos idées avec nos experts."
+      },
+      "2": {
+        "title": "Solutions Personnalisées",
+        "description": "Nous concevons des solutions adaptées à vos besoins."
+      },
+      "3": {
+        "title": "Meilleure Qualité",
+        "description": "Une qualité premium à des prix abordables."
+      }
     }
   },
-
   "footer": {
     "tagline": "Produits en bois haut de gamme, mobilier sur mesure et solutions de bois durable fabriqués au Rwanda.",
     "companyHeader": "Entreprise",
@@ -135,45 +178,62 @@
     "copyright": "TimberCraft Rwanda. Tous droits réservés.",
     "footerTagline": "Qualité Artisanale. Héritage Durable."
   },
-
   "productsPage": {
     "title": "Nos Produits",
     "subtitle": "Des produits en bois de qualité conçus pour chaque espace"
   },
-
   "aboutPage": {
     "title": "À Propos de TimberCraft Rwanda"
   },
-
   "servicesPage": {
     "title": "Nos Services",
     "subtitle": "Des solutions complètes de fabrication et de traitement du bois pour tous vos besoins",
     "noServices": "Aucun service disponible"
   },
-
   "services": {
     "items": {
-      "1": { "title": "Mobilier Sur Mesure", "description": "Mobilier fait sur mesure pour votre maison ou votre bureau." },
-      "2": { "title": "Décoration Intérieure", "description": "Finition et décoration intérieure en bois de qualité professionnelle." },
-      "3": { "title": "Traitement du Bois", "description": "Traitement et transformation du bois de haute qualité." },
-      "4": { "title": "Consultation", "description": "Conseils d'experts sur les types de bois et la planification de projets." }
+      "1": {
+        "title": "Mobilier Sur Mesure",
+        "description": "Mobilier fait sur mesure pour votre maison ou votre bureau."
+      },
+      "2": {
+        "title": "Décoration Intérieure",
+        "description": "Finition et décoration intérieure en bois de qualité professionnelle."
+      },
+      "3": {
+        "title": "Traitement du Bois",
+        "description": "Traitement et transformation du bois de haute qualité."
+      },
+      "4": {
+        "title": "Consultation",
+        "description": "Conseils d'experts sur les types de bois et la planification de projets."
+      }
     }
   },
-
   "projectsPage": {
     "title": "Nos Projets",
     "subtitle": "Découvrez notre portfolio de projets réalisés qui mettent en valeur notre savoir-faire",
     "noProjects": "Aucun projet disponible"
   },
-
   "projects": {
     "items": {
-      "1": { "title": "Villa de Luxe", "category": "Résidentiel", "description": "Aménagement intérieur en bois complet pour une villa haut de gamme." },
-      "2": { "title": "Bureau Moderne", "category": "Commercial", "description": "Bureaux et cloisons sur mesure pour une entreprise technologique." },
-      "3": { "title": "Éco-Lodge", "category": "Hôtellerie", "description": "Cabanes en bois durable dans un complexe forestier." }
+      "1": {
+        "title": "Villa de Luxe",
+        "category": "Résidentiel",
+        "description": "Aménagement intérieur en bois complet pour une villa haut de gamme."
+      },
+      "2": {
+        "title": "Bureau Moderne",
+        "category": "Commercial",
+        "description": "Bureaux et cloisons sur mesure pour une entreprise technologique."
+      },
+      "3": {
+        "title": "Éco-Lodge",
+        "category": "Hôtellerie",
+        "description": "Cabanes en bois durable dans un complexe forestier."
+      }
     }
   },
-
   "sustainabilityPage": {
     "title": "Durabilité",
     "subtitle": "Notre engagement envers des pratiques durables et la responsabilité environnementale",
@@ -196,7 +256,6 @@
       }
     }
   },
-
   "contactPage": {
     "title": "Contactez-Nous",
     "subtitle": "Contactez-nous pour toute demande, devis ou question",
@@ -226,26 +285,26 @@
       }
     }
   },
-
   "productDetail": {
     "notFound": "Produit introuvable",
     "backToProducts": "Retour aux Produits"
   },
-
   "serviceDetail": {
     "notFound": "Service introuvable",
     "backToServices": "Retour aux Services"
   },
-
   "projectDetail": {
     "notFound": "Projet introuvable",
     "backToProjects": "Retour aux Projets"
   },
-
   "language": {
     "switchLabel": "Choisir la langue",
     "en": "English",
     "rw": "Kinyarwanda",
     "fr": "Français"
+  },
+  "theme": {
+    "switchToLight": "Passer au mode clair",
+    "switchToDark": "Passer au mode sombre"
   }
 }

@@ -51,20 +51,20 @@ const ServiceDetailPage = () => {
       <Navbar />
       <main className="section-padding">
         <div className="container-custom">
-          <div className="text-sm breadcrumbs mb-6 text-gray-500">
+          <div className="text-sm breadcrumbs mb-6 text-theme-text-secondary">
             <ul>
-              <li><Link to="/" className="hover:text-timbercraft-green">{t('common.home')}</Link></li>
-              <li><Link to="/services" className="hover:text-timbercraft-green">{t('nav.services')}</Link></li>
-              <li className="text-timbercraft-dark font-medium">{title}</li>
+              <li><Link to="/" className="hover:text-theme-primary-text">{t('common.home')}</Link></li>
+              <li><Link to="/services" className="hover:text-theme-primary-text">{t('nav.services')}</Link></li>
+              <li className="text-theme-text font-medium">{title}</li>
             </ul>
           </div>
 
-          <h1 className="text-3xl md:text-4xl font-display font-semibold text-timbercraft-dark mb-2 tracking-tight">{title}</h1>
-          <p className="text-gray-600 mb-8 max-w-2xl">{description}</p>
+          <h1 className="text-3xl md:text-4xl font-display font-semibold text-theme-text mb-2 tracking-tight">{title}</h1>
+          <p className="text-theme-text-secondary mb-8 max-w-2xl">{description}</p>
 
           <button
             onClick={() => setLightboxOpen(true)}
-            className="group relative w-full rounded-2xl overflow-hidden shadow-xl mb-4 bg-gray-100 block"
+            className="group relative w-full rounded-2xl overflow-hidden shadow-xl mb-4 bg-theme-surface block"
           >
             <img
               src={activeImage}
@@ -82,7 +82,7 @@ const ServiceDetailPage = () => {
                 <button
                   key={idx}
                   onClick={() => setActiveImage(img)}
-                  className={`rounded-lg overflow-hidden border-2 transition-all ${activeImage === img ? 'border-timbercraft-green' : 'border-transparent opacity-80 hover:opacity-100'}`}
+                  className={`rounded-lg overflow-hidden border-2 transition-all ${activeImage === img ? 'border-theme-primary' : 'border-transparent opacity-80 hover:opacity-100'}`}
                 >
                   <img src={img} alt={`${title} ${idx + 1}`} className="w-full h-24 md:h-28 object-cover" />
                 </button>

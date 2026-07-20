@@ -14,7 +14,7 @@ const CTA = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="section-padding bg-white">
+    <section className="section-padding bg-theme-bg">
       <div className="container-custom">
         <div className="bg-timbercraft-dark-green rounded-3xl p-8 md:p-12 text-white shadow-2xl relative overflow-hidden">
           {/* Decorative background element */}

@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { Phone, Mail, MapPin, Menu, X } from 'lucide-react';
 import { contactInfo } from '../data';
 import LanguageSwitcher from './LanguageSwitcher';
+import ThemeToggle from './ThemeToggle';
 
 const Navbar = () => {
   const { t } = useTranslation();
@@ -23,8 +24,8 @@ const Navbar = () => {
   const isActive = (path) => location.pathname === path;
 
   return (
-    <nav className="sticky top-0 z-50 bg-white shadow-md">
-      {/* Top Contact Bar */}
+    <nav className="sticky top-0 z-50 bg-theme-bg border-b border-theme-border shadow-md">
+      {/* Top Contact Bar — a fixed dark brand strip by design, independent of site theme */}
       <div className="bg-timbercraft-dark text-white py-2 hidden md:block">
         <div className="container-custom flex justify-between items-center text-xs">
           <div className="flex gap-5">
@@ -64,6 +65,7 @@ const Navbar = () => {
             </div>
             <div className="w-px h-4 bg-white/20" />
             <LanguageSwitcher variant="dark" />
+            <ThemeToggle variant="dark" />
           </div>
         </div>
       </div>
@@ -77,8 +79,8 @@ const Navbar = () => {
               TC
             </div>
             <div>
-              <span className="text-xl font-display font-semibold text-timbercraft-dark leading-none">TimberCraft</span>
-              <p className="text-[10px] text-gray-500 tracking-widest uppercase">Rwanda</p>
+              <span className="text-xl font-display font-semibold text-theme-text leading-none">TimberCraft</span>
+              <p className="text-[10px] text-theme-text-secondary tracking-widest uppercase">Rwanda</p>
             </div>
           </Link>
 
@@ -88,10 +90,10 @@ const Navbar = () => {
               <Link
                 key={link.key}
                 to={link.path}
-                className={`relative text-sm font-semibold transition-colors hover:text-timbercraft-green py-1 ${
+                className={`relative text-sm font-semibold transition-colors hover:text-theme-primary-text py-1 ${
                   isActive(link.path)
-                    ? 'text-timbercraft-green after:absolute after:left-0 after:-bottom-1 after:w-full after:h-0.5 after:bg-timbercraft-green after:rounded-full'
-                    : 'text-timbercraft-dark'
+                    ? 'text-theme-primary-text after:absolute after:left-0 after:-bottom-1 after:w-full after:h-0.5 after:bg-theme-primary-text after:rounded-full'
+                    : 'text-theme-text'
                 }`}
               >
                 {t(`nav.${link.key}`)}
@@ -100,12 +102,13 @@ const Navbar = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="flex items-center gap-2 lg:hidden">
-            <div className="md:hidden">
+          <div className="flex items-center gap-1 lg:hidden">
+            <div className="md:hidden flex items-center">
               <LanguageSwitcher />
+              <ThemeToggle />
             </div>
             <button
-              className="btn btn-ghost btn-square text-timbercraft-dark"
+              className="btn btn-ghost btn-square text-theme-text"
               onClick={() => setIsOpen(!isOpen)}
               aria-label={t('nav.toggleMenu')}
             >
@@ -116,14 +119,14 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="lg:hidden mt-4 pb-4 animate-fade-in border-t border-gray-100 pt-4">
+          <div className="lg:hidden mt-4 pb-4 animate-fade-in border-t border-theme-border pt-4">
             <div className="flex flex-col gap-1">
               {navLinks.map((link) => (
                 <Link
                   key={link.key}
                   to={link.path}
                   className={`text-sm font-semibold px-3 py-2.5 rounded-lg transition-colors ${
-                    isActive(link.path) ? 'bg-timbercraft-green text-white' : 'text-timbercraft-dark hover:bg-gray-100'
+                    isActive(link.path) ? 'bg-theme-primary text-white' : 'text-theme-text hover:bg-theme-surface-alt'
                   }`}
                   onClick={() => setIsOpen(false)}
                 >

@@ -20,7 +20,7 @@ const ServicesPage = () => {
           <p className="section-subtitle">{t('servicesPage.subtitle')}</p>
 
           {!services || services.length === 0 ? (
-            <p className="text-center text-gray-500">{t('servicesPage.noServices')}</p>
+            <p className="text-center text-theme-text-secondary">{t('servicesPage.noServices')}</p>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {services.map((service) => (
@@ -38,16 +38,16 @@ const ServicesPage = () => {
                     </figure>
                   )}
                   <div className="card-body p-6 text-center items-center">
-                    <h3 className="card-title text-xl text-timbercraft-dark">
+                    <h3 className="card-title text-xl text-theme-text">
                       {t(`services.items.${service.id}.title`)}
                     </h3>
-                    <p className="text-gray-600">
+                    <p className="text-theme-text-secondary">
                       {t(`services.items.${service.id}.description`)}
                     </p>
                     <div className="card-actions">
                       <Link
                         to={`/services/${service.id}`}
-                        className="text-timbercraft-green font-semibold hover:underline inline-flex items-center gap-1 mt-2 group/link"
+                        className="text-theme-primary-text font-semibold hover:underline inline-flex items-center gap-1 mt-2 group/link"
                       >
                         {t('common.viewMore')} <ArrowRight size={16} className="transition-transform group-hover/link:translate-x-1" />
                       </Link>

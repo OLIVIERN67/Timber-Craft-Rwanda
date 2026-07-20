@@ -29,7 +29,6 @@
       "description": "Get in touch with TimberCraft Rwanda for inquiries, quotes, or questions about our wooden products and services."
     }
   },
-
   "nav": {
     "home": "Home",
     "about": "About Us",
@@ -40,7 +39,6 @@
     "contact": "Contact Us",
     "toggleMenu": "Toggle menu"
   },
-
   "common": {
     "viewMore": "View More",
     "loading": "Loading...",
@@ -51,7 +49,6 @@
     "yearsOfExcellence": "Years of Excellence",
     "home": "Home"
   },
-
   "hero": {
     "badge": "10+ Years of Rwandan Craftsmanship",
     "titleLine1": "Crafting Quality.",
@@ -60,34 +57,66 @@
     "ctaPrimary": "Explore Our Products",
     "ctaSecondary": "Request a Quote"
   },
-
   "features": {
     "items": {
-      "1": { "title": "Quality Craftsmanship", "description": "Skilled artisans delivering excellence in every piece." },
-      "2": { "title": "Sustainable Wood", "description": "Responsibly sourced timber for a better tomorrow." },
-      "3": { "title": "Custom Designs", "description": "We bring your ideas to life with unique designs." },
-      "4": { "title": "Durable & Reliable", "description": "Strong, long-lasting products built to perfection." },
-      "5": { "title": "Timely Delivery", "description": "On-time delivery & installation you can count on." },
-      "6": { "title": "Customer Support", "description": "We are always here to serve you better." }
+      "1": {
+        "title": "Quality Craftsmanship",
+        "description": "Skilled artisans delivering excellence in every piece."
+      },
+      "2": {
+        "title": "Sustainable Wood",
+        "description": "Responsibly sourced timber for a better tomorrow."
+      },
+      "3": {
+        "title": "Custom Designs",
+        "description": "We bring your ideas to life with unique designs."
+      },
+      "4": {
+        "title": "Durable & Reliable",
+        "description": "Strong, long-lasting products built to perfection."
+      },
+      "5": {
+        "title": "Timely Delivery",
+        "description": "On-time delivery & installation you can count on."
+      },
+      "6": {
+        "title": "Customer Support",
+        "description": "We are always here to serve you better."
+      }
     }
   },
-
   "productsSection": {
     "eyebrow": "Our Products",
     "title": "Wooden Products for Every Need"
   },
-
   "products": {
     "items": {
-      "1": { "title": "Home Furniture", "description": "Beds, Tables, Chairs, Cabinets, Sofas, Shelves and more." },
-      "2": { "title": "Doors & Windows", "description": "High quality wooden doors, windows and frames." },
-      "3": { "title": "Office Furniture", "description": "Desks, Meeting tables, Cabinets and other office solutions." },
-      "4": { "title": "Interior Finishing", "description": "Ceilings, Wall panels, Flooring, Decorative and more." },
-      "5": { "title": "Packaging Solutions", "description": "Wooden pallets, crates, cable drums and more." },
-      "6": { "title": "Timber Supply", "description": "Processed timber and raw wood supply." }
+      "1": {
+        "title": "Home Furniture",
+        "description": "Beds, Tables, Chairs, Cabinets, Sofas, Shelves and more."
+      },
+      "2": {
+        "title": "Doors & Windows",
+        "description": "High quality wooden doors, windows and frames."
+      },
+      "3": {
+        "title": "Office Furniture",
+        "description": "Desks, Meeting tables, Cabinets and other office solutions."
+      },
+      "4": {
+        "title": "Interior Finishing",
+        "description": "Ceilings, Wall panels, Flooring, Decorative and more."
+      },
+      "5": {
+        "title": "Packaging Solutions",
+        "description": "Wooden pallets, crates, cable drums and more."
+      },
+      "6": {
+        "title": "Timber Supply",
+        "description": "Processed timber and raw wood supply."
+      }
     }
   },
-
   "about": {
     "eyebrow": "About Us",
     "title": "Who We Are",
@@ -97,27 +126,41 @@
     "missionLabel": "Our Mission",
     "mission": "To transform locally available wood resources into world-class products while creating jobs and supporting sustainable development."
   },
-
   "statistics": {
     "items": {
-      "1": { "label": "Happy Clients" },
-      "2": { "label": "Projects Completed" },
-      "3": { "label": "Years of Experience" },
-      "4": { "label": "Sustainable Practices" }
+      "1": {
+        "label": "Happy Clients"
+      },
+      "2": {
+        "label": "Projects Completed"
+      },
+      "3": {
+        "label": "Years of Experience"
+      },
+      "4": {
+        "label": "Sustainable Practices"
+      }
     }
   },
-
   "cta": {
     "title": "Have a Project in Mind?",
     "subtitle": "Let's build something amazing together.",
     "button": "Contact Us Today",
     "points": {
-      "1": { "title": "Free Consultation", "description": "Discuss your ideas with our experts." },
-      "2": { "title": "Custom Solutions", "description": "We design solutions that fit your needs." },
-      "3": { "title": "Best Quality", "description": "Premium quality at affordable prices." }
+      "1": {
+        "title": "Free Consultation",
+        "description": "Discuss your ideas with our experts."
+      },
+      "2": {
+        "title": "Custom Solutions",
+        "description": "We design solutions that fit your needs."
+      },
+      "3": {
+        "title": "Best Quality",
+        "description": "Premium quality at affordable prices."
+      }
     }
   },
-
   "footer": {
     "tagline": "Premium wooden products, custom furniture, and sustainable timber solutions made in Rwanda.",
     "companyHeader": "Company",
@@ -135,45 +178,62 @@
     "copyright": "TimberCraft Rwanda. All rights reserved.",
     "footerTagline": "Crafting Quality. Building Legacy."
   },
-
   "productsPage": {
     "title": "Our Products",
     "subtitle": "Quality wooden products crafted for every space"
   },
-
   "aboutPage": {
     "title": "About TimberCraft Rwanda"
   },
-
   "servicesPage": {
     "title": "Our Services",
     "subtitle": "Comprehensive wood manufacturing and timber solutions for all your needs",
     "noServices": "No services available"
   },
-
   "services": {
     "items": {
-      "1": { "title": "Custom Furniture", "description": "Tailor-made furniture for your home or office." },
-      "2": { "title": "Interior Design", "description": "Professional interior wood finishing and design." },
-      "3": { "title": "Timber Processing", "description": "High-quality wood processing and treatment." },
-      "4": { "title": "Consultation", "description": "Expert advice on wood types and project planning." }
+      "1": {
+        "title": "Custom Furniture",
+        "description": "Tailor-made furniture for your home or office."
+      },
+      "2": {
+        "title": "Interior Design",
+        "description": "Professional interior wood finishing and design."
+      },
+      "3": {
+        "title": "Timber Processing",
+        "description": "High-quality wood processing and treatment."
+      },
+      "4": {
+        "title": "Consultation",
+        "description": "Expert advice on wood types and project planning."
+      }
     }
   },
-
   "projectsPage": {
     "title": "Our Projects",
     "subtitle": "Explore our portfolio of completed projects showcasing our craftsmanship",
     "noProjects": "No projects available"
   },
-
   "projects": {
     "items": {
-      "1": { "title": "Luxury Villa", "category": "Residential", "description": "Complete wood interior for a high-end villa." },
-      "2": { "title": "Modern Office", "category": "Commercial", "description": "Custom desks and partitions for a tech company." },
-      "3": { "title": "Eco Lodge", "category": "Hospitality", "description": "Sustainable wood cabins in a forest resort." }
+      "1": {
+        "title": "Luxury Villa",
+        "category": "Residential",
+        "description": "Complete wood interior for a high-end villa."
+      },
+      "2": {
+        "title": "Modern Office",
+        "category": "Commercial",
+        "description": "Custom desks and partitions for a tech company."
+      },
+      "3": {
+        "title": "Eco Lodge",
+        "category": "Hospitality",
+        "description": "Sustainable wood cabins in a forest resort."
+      }
     }
   },
-
   "sustainabilityPage": {
     "title": "Sustainability",
     "subtitle": "Our commitment to sustainable practices and environmental responsibility",
@@ -196,7 +256,6 @@
       }
     }
   },
-
   "contactPage": {
     "title": "Contact Us",
     "subtitle": "Get in touch with us for inquiries, quotes, or any questions",
@@ -226,26 +285,26 @@
       }
     }
   },
-
   "productDetail": {
     "notFound": "Product not found",
     "backToProducts": "Back to Products"
   },
-
   "serviceDetail": {
     "notFound": "Service not found",
     "backToServices": "Back to Services"
   },
-
   "projectDetail": {
     "notFound": "Project not found",
     "backToProjects": "Back to Projects"
   },
-
   "language": {
     "switchLabel": "Select language",
     "en": "English",
     "rw": "Kinyarwanda",
     "fr": "Français"
+  },
+  "theme": {
+    "switchToLight": "Switch to light mode",
+    "switchToDark": "Switch to dark mode"
   }
 }

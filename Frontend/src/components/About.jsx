@@ -7,7 +7,7 @@ const About = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="section-padding bg-white">
+    <section className="section-padding bg-theme-bg">
       <div className="container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="relative">
@@ -26,23 +26,23 @@ const About = () => {
 
           <div>
             <p className="eyebrow">{t('about.eyebrow')}</p>
-            <h2 className="text-3xl md:text-4xl font-display font-semibold text-timbercraft-dark mb-6 tracking-tight">
+            <h2 className="text-3xl md:text-4xl font-display font-semibold text-theme-text mb-6 tracking-tight">
               {t('about.title')}
             </h2>
-            <p className="text-gray-600 mb-8 leading-relaxed">
+            <p className="text-theme-text-secondary mb-8 leading-relaxed">
               {t('about.description')}
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-              <div className="bg-timbercraft-cream p-6 rounded-xl border border-black/5">
-                <Eye size={22} strokeWidth={1.75} className="text-timbercraft-green mb-3" />
-                <h4 className="font-display font-semibold text-timbercraft-dark mb-2">{t('about.visionLabel')}</h4>
-                <p className="text-sm text-gray-600 leading-relaxed">{t('about.vision')}</p>
+              <div className="bg-theme-surface p-6 rounded-xl border border-theme-border">
+                <Eye size={22} strokeWidth={1.75} className="text-theme-primary-text mb-3" />
+                <h4 className="font-display font-semibold text-theme-text mb-2">{t('about.visionLabel')}</h4>
+                <p className="text-sm text-theme-text-secondary leading-relaxed">{t('about.vision')}</p>
               </div>
-              <div className="bg-timbercraft-cream p-6 rounded-xl border border-black/5">
-                <Target size={22} strokeWidth={1.75} className="text-timbercraft-green mb-3" />
-                <h4 className="font-display font-semibold text-timbercraft-dark mb-2">{t('about.missionLabel')}</h4>
-                <p className="text-sm text-gray-600 leading-relaxed">{t('about.mission')}</p>
+              <div className="bg-theme-surface p-6 rounded-xl border border-theme-border">
+                <Target size={22} strokeWidth={1.75} className="text-theme-primary-text mb-3" />
+                <h4 className="font-display font-semibold text-theme-text mb-2">{t('about.missionLabel')}</h4>
+                <p className="text-sm text-theme-text-secondary leading-relaxed">{t('about.mission')}</p>
               </div>
             </div>
           </div>
